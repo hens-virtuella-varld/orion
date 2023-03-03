@@ -1,9 +1,12 @@
 import "./App.css";
+import Navbar from "./psykoterapigruopen.se/components/NavBar/NavBar";
+import Hero from "./psykoterapigruopen.se/components/HeroSection/Hero";
 
 const App = () => {
 	return (
 		<div className="App">
-			<h1>Orion Project</h1>
+			<Navbar />
+			<Hero />
 		</div>
 	);
 };
