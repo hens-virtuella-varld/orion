@@ -1,5 +1,5 @@
-import bubblesImage from "../../assets/orion-bubbles.png";
-import huggingBrainImage from "../../assets/orion-hugging-brain.png";
+import bubblesImage from "../../assets/orion-bubbles-new.svg";
+import huggingBrainImage from "../../assets/hugging-brain-new.svg";
 import akutIllustrationImage from "../../assets/orion-akut-illustration.svg";
 
 const Hero = () => {
