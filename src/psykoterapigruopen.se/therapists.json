@@ -1,0 +1,23 @@
+[
+	{
+		"id": "e1",
+		"name": "Karina",
+		"city": "Stockholm",
+		"category": ["Depression", "ADHD", "Anxiety", "Couples"],
+		"img": "therapistImages/orion-example-image.png"
+	},
+	{
+		"id": "e2",
+		"name": "Karina",
+		"city": "Stockholm",
+		"category": ["Depression", "ADHD", "Anxiety", "Couples"],
+		"img": "therapistImages/orion-example-image.png"
+	},
+	{
+		"id": "e3",
+		"name": "Karina",
+		"city": "Stockholm",
+		"category": ["Depression", "ADHD", "Anxiety", "Couples"],
+		"img": "therapistImages/orion-example-image.png"
+	}
+]
