@@ -4,6 +4,7 @@ import Navbar from "./psykoterapigruopen.se/components/NavBar/NavBar";
 import Hero from "./psykoterapigruopen.se/components/HeroSection/Hero";
 import CardList from "./psykoterapigruopen.se/components/CardSection/CardList";
 import Filter from "./psykoterapigruopen.se/components/Filter/Filter";
+import TherapistInfo from "./psykoterapigruopen.se/components/CardSection/TherapistInfo";
 
 const App = () => {
 	return (
@@ -12,6 +13,7 @@ const App = () => {
 			<Hero />
 			<Filter />
 			<CardList therapistData={therapistData} />
+			<TherapistInfo therapistData={therapistData} />
 		</div>
 	);
 };
