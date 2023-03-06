@@ -1,12 +1,15 @@
 import bubblesImage from "../../assets/orion-bubbles-new.svg";
 import huggingBrainImage from "../../assets/hugging-brain-new.svg";
 import akutIllustrationImage from "../../assets/orion-akut-illustration.svg";
+import heroCSS from "./hero.module.css";
 
 const Hero = () => {
 	return (
 		<div>
-			<img src={bubblesImage} alt="Orion Hero" />
-			<img src={huggingBrainImage} alt="Orion Hero" />
+			<div className={heroCSS.topHero}>
+				<img src={bubblesImage} alt="Orion Hero" />
+				<img src={huggingBrainImage} alt="Orion Hero" />
+			</div>
 			<div>
 				<h2>Om det är brottom </h2>
 				<p>Kontakta psykiatrisk akutmottagning eller ring 112.</p>
