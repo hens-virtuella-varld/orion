@@ -2,10 +2,10 @@ import FilterButton from "./FilterButton";
 import SearchBar from "./SearchBar";
 import filterCSS from "./filter.module.css";
 
-const Filter = () => {
+const Filter = ({ changeFilter }) => {
 	return (
 		<div className={filterCSS.filterSection}>
-			<SearchBar />
+			<SearchBar changeFilter={changeFilter} />
 			<FilterButton />
 			<FilterButton />
 			<FilterButton />
