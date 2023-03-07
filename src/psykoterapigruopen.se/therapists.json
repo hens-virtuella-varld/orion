@@ -1,7 +1,7 @@
 [
 	{
 		"id": "e1",
-		"name": "Karina",
+		"name": "Olle",
 		"city": "Stockholm",
 		"title": "Leg. psykoterapeut",
 		"category": ["Depression", "ADHD", "Anxiety", "Couples"],
@@ -27,7 +27,67 @@
 	},
 	{
 		"id": "e3",
-		"name": "Karina",
+		"name": "Joel",
+		"city": "Stockholm",
+		"title": "Leg. psykoterapeut",
+		"category": ["Depression", "ADHD", "Anxiety", "Couples"],
+		"img": "therapistImages/orion-example-image.png",
+		"mobile": "+46 733 78 90 05",
+		"email": "leila.hej@gmail.com",
+		"price": "1500",
+		"info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque culpa quam ipsum sunt perspiciatis hic natus optio molestias suscipit nam, voluptates fugit, error iste reprehenderit modi odio laboriosam? Iure, tenetur!"
+	},
+	{
+		"id": "e4",
+		"name": "Rebekka",
+		"city": "Stockholm",
+		"title": "Leg. psykoterapeut",
+		"category": ["Depression", "ADHD", "Anxiety", "Couples"],
+		"img": "therapistImages/orion-example-image.png",
+		"mobile": "+46 733 78 90 05",
+		"email": "leila.hej@gmail.com",
+		"price": "1500",
+		"info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque culpa quam ipsum sunt perspiciatis hic natus optio molestias suscipit nam, voluptates fugit, error iste reprehenderit modi odio laboriosam? Iure, tenetur!"
+	},
+	{
+		"id": "e5",
+		"name": "Elinor",
+		"city": "Stockholm",
+		"title": "Leg. psykoterapeut",
+		"category": ["Depression", "ADHD", "Anxiety", "Couples"],
+		"img": "therapistImages/orion-example-image.png",
+		"mobile": "+46 733 78 90 05",
+		"email": "leila.hej@gmail.com",
+		"price": "1500",
+		"info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque culpa quam ipsum sunt perspiciatis hic natus optio molestias suscipit nam, voluptates fugit, error iste reprehenderit modi odio laboriosam? Iure, tenetur!"
+	},
+	{
+		"id": "e6",
+		"name": "Maria",
+		"city": "Stockholm",
+		"title": "Leg. psykoterapeut",
+		"category": ["Depression", "ADHD", "Anxiety", "Couples"],
+		"img": "therapistImages/orion-example-image.png",
+		"mobile": "+46 733 78 90 05",
+		"email": "leila.hej@gmail.com",
+		"price": "1500",
+		"info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque culpa quam ipsum sunt perspiciatis hic natus optio molestias suscipit nam, voluptates fugit, error iste reprehenderit modi odio laboriosam? Iure, tenetur!"
+	},
+	{
+		"id": "e7",
+		"name": "Johan",
+		"city": "Stockholm",
+		"title": "Leg. psykoterapeut",
+		"category": ["Depression", "ADHD", "Anxiety", "Couples"],
+		"img": "therapistImages/orion-example-image.png",
+		"mobile": "+46 733 78 90 05",
+		"email": "leila.hej@gmail.com",
+		"price": "1500",
+		"info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque culpa quam ipsum sunt perspiciatis hic natus optio molestias suscipit nam, voluptates fugit, error iste reprehenderit modi odio laboriosam? Iure, tenetur!"
+	},
+	{
+		"id": "e8",
+		"name": "Klara",
 		"city": "Stockholm",
 		"title": "Leg. psykoterapeut",
 		"category": ["Depression", "ADHD", "Anxiety", "Couples"],
