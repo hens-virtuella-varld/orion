@@ -1,14 +1,17 @@
-import FilterButton from "./FilterButton";
+import Dropdown from "./Dropdown";
 import SearchBar from "./SearchBar";
 import filterCSS from "./filter.module.css";
+import { useState } from "react";
 
-const Filter = ({ changeFilter }) => {
+
+const Filter = ({selected, setSelected, lokal, region, format, tematik, changeFilter}) => {
 	return (
 		<div className={filterCSS.filterSection}>
 			<SearchBar changeFilter={changeFilter} />
-			<FilterButton />
-			<FilterButton />
-			<FilterButton />
+			<Dropdown selected={(selected)} setSelected={(setSelected)} options={(lokal)}/>
+			<Dropdown selected={(selected)} setSelected={(setSelected)} options={(region)}/>
+			<Dropdown selected={(selected)} setSelected={(setSelected)} options={(format)}/>
+			<Dropdown selected={(selected)} setSelected={(setSelected)} options={(tematik)}/>
 		</div>
 	);
 };
