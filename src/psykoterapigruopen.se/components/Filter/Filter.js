@@ -3,10 +3,11 @@ import SearchBar from "./SearchBar";
 import filterCSS from "./filter.module.css";
 import { useState } from "react";
 
-const Filter = ({selected, setSelected, lokal, region, format, tematik}) => {
+
+const Filter = ({selected, setSelected, lokal, region, format, tematik, changeFilter}) => {
 	return (
 		<div className={filterCSS.filterSection}>
-			<SearchBar />
+			<SearchBar changeFilter={changeFilter} />
 			<Dropdown selected={(selected)} setSelected={(setSelected)} options={(lokal)}/>
 			<Dropdown selected={(selected)} setSelected={(setSelected)} options={(region)}/>
 			<Dropdown selected={(selected)} setSelected={(setSelected)} options={(format)}/>
