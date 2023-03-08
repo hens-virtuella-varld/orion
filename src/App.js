@@ -6,17 +6,17 @@ import Hero from "./psykoterapigruopen.se/components/HeroSection/Hero";
 import CardList from "./psykoterapigruopen.se/components/CardSection/CardList";
 import Filter from "./psykoterapigruopen.se/components/Filter/Filter";
 import TherapistInfo from "./psykoterapigruopen.se/components/CardSection/TherapistInfo";
-import { useState } from "react";
-
-
+import DirectionCardWrapper from "./psykoterapigruopen.se/components/Filter/DirectionCardWrapper";
+import directionImgOne from "./psykoterapigruopen.se/assets/orion-filtersystem.svg";
+import directionImgTwo from "./psykoterapigruopen.se/assets/orion-fa-personlig-hjalp.svg";
+import directionImgThree from "./psykoterapigruopen.se/assets/orion-svara-pa-fragor.svg";
 
 const App = () => {
-
 	const [selected, setSelected] = useState("");
-	const lokal = ['Stockholm', 'Malmö', 'Göteborg']
-	const region = ['Stockholm Region', 'Malmö region', 'Göteborg region']
-	const tematik = ['Stockholm tematik', 'Malmö tematik', 'Göteborg tematik']
-	const format = ['Stockholm format', 'Malmö format', 'Göteborg format']
+	const lokal = ["Stockholm", "Malmö", "Göteborg"];
+	const region = ["Stockholm Region", "Malmö region", "Göteborg region"];
+	const tematik = ["Stockholm tematik", "Malmö tematik", "Göteborg tematik"];
+	const format = ["Stockholm format", "Malmö format", "Göteborg format"];
 
 	const [searchBarFilter, setSearchBarFilter] = useState("");
 
@@ -33,13 +33,35 @@ const App = () => {
 
 	const filteredTherapists = therapistData.filter(searchFilter);
 
+	const directionCardData = [
+		{
+			img: directionImgOne,
+			text: "Använd filtersystemet",
+		},
+		{
+			img: directionImgTwo,
+			text: "Svara på frågor",
+		},
+		{
+			img: directionImgThree,
+			text: "Få personlig hjälp",
+		},
+	];
 
 	return (
 		<div className="App">
 			<Navbar />
 			<Hero />
-
-			<Filter changeFilter={changeFilter} selected={(selected)} setSelected={(setSelected)} lokal={lokal} region={region} tematik={tematik} format={format}/>
+			<DirectionCardWrapper directionCardData={directionCardData} />
+			<Filter
+				changeFilter={changeFilter}
+				selected={selected}
+				setSelected={setSelected}
+				lokal={lokal}
+				region={region}
+				tematik={tematik}
+				format={format}
+			/>
 			<CardList therapistData={filteredTherapists} />
 
 			<TherapistInfo therapistData={therapistData} />
