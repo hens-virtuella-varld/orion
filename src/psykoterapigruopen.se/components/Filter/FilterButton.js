@@ -1,7 +1,9 @@
-const FilterButton = () => {
+const FilterButton = ({ categories, changeCategoryFilter }) => {
 	return (
 		<div>
-			<button>Filter Button</button>
+			{categories.map((category) => (
+				<button onClick={changeCategoryFilter}>{category}</button>
+			))}
 		</div>
 	);
 };

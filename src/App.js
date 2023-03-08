@@ -9,9 +9,34 @@ import TherapistInfo from "./psykoterapigruopen.se/components/CardSection/Therap
 
 const App = () => {
 	const [searchBarFilter, setSearchBarFilter] = useState("");
+	const [categoryFilter, setCategoryFilter] = useState([]);
 
 	const changeFilter = (e) => {
 		setSearchBarFilter(e.target.value);
+	};
+
+	const changeCategoryFilter = (e) => {
+		const changedCategoryFilter = e.target.value;
+		console.log(changedCategoryFilter);
+		setCategoryFilter((prevCategories) =>
+			!prevCategories.includes(changedCategoryFilter)
+				? [...prevCategories, changeCategoryFilter]
+				: prevCategories.filter(
+						(prevItem) => prevItem !== changedCategoryFilter
+				  )
+		);
+	};
+
+	const categoryFilterFunc = (therapist) => {
+		if (categoryFilter.length === 0) {
+			return true;
+		}
+
+		return (
+			therapist.categoryFilter.filter((category) =>
+				categoryFilter.includes(category)
+			).length === categoryFilter.length
+		);
 	};
 
 	const keys = ["name", "city"];
@@ -21,13 +46,21 @@ const App = () => {
 			therapist[key].toLowerCase().startsWith(searchBarFilter.toLowerCase())
 		);
 
-	const filteredTherapists = therapistData.filter(searchFilter);
+	const filteredTherapists = therapistData
+		.filter(searchFilter)
+		.filter(categoryFilterFunc);
+
+	const categories = ["Depression", "ADHD", "Anxiety", "Couples"];
 
 	return (
 		<div className="App">
 			<Navbar />
 			<Hero />
-			<Filter changeFilter={changeFilter} />
+			<Filter
+				changeFilter={changeFilter}
+				categories={categories}
+				changeCategoryFilter={changeCategoryFilter}
+			/>
 			<CardList therapistData={filteredTherapists} />
 			<TherapistInfo therapistData={therapistData} />
 		</div>
