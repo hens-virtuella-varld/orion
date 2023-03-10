@@ -1,10 +1,10 @@
 import DirectionCard from "./DirectionCard";
 
-const DirectionCardWrapper = ({ directionCardData }) => {
+const DirectionCardWrapper = ({ directionCardData, directionCardHandler }) => {
 	return (
 		<div>
 			{directionCardData.map((data) => (
-				<DirectionCard data={data} />
+				<DirectionCard data={data} directionCardHandler={directionCardHandler}  />
 			))}
 		</div>
 	);
