@@ -1,4 +1,4 @@
-import map from "../../assets/orion-map.png";
+import map from "../../../assets/orion-map.png";
 
 const PopupContactCard = () => {
 	return (

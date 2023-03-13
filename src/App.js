@@ -10,27 +10,33 @@ import DirectionCardWrapper from "./psykoterapigruopen.se/components/Filter/Dire
 import directionImgOne from "./psykoterapigruopen.se/assets/orion-filtersystem.svg";
 import directionImgTwo from "./psykoterapigruopen.se/assets/orion-fa-personlig-hjalp.svg";
 import directionImgThree from "./psykoterapigruopen.se/assets/orion-svara-pa-fragor.svg";
-import PopupContactCard from "./psykoterapigruopen.se/components/Filter/PopupContactCard";
+import PopupContactCard from "./psykoterapigruopen.se/components/Filter/ContactPopup/PopupContactCard";
+import questions from "./psykoterapigruopen.se/questions.json";
+import QuestionForm from "./psykoterapigruopen.se/components/Filter/QuestionFilter/QuestionFrom";
 
-import Card from "./components/Card/Card";
 const App = () => {
 	const [showContactPopup, setShowContactPopup] = useState(false);
-
+	const [showQuestionsPopup, setShowQuestionsPopup] = useState(false);
 	const [selected, setSelected] = useState("");
-	const lokal = ["Stockholm", "Malmö", "Göteborg"];
-	const region = ["Stockholm Region", "Malmö region", "Göteborg region"];
-	const tematik = ["Stockholm tematik", "Malmö tematik", "Göteborg tematik"];
-	const format = ["Stockholm format", "Malmö format", "Göteborg format"];
-	const cardQuantity = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
-
 	const [searchBarFilter, setSearchBarFilter] = useState("");
+	const [categoriesFilter, setCategoriesFilter] = useState("");
+	const [languageFilter, setLanguageFilter] = useState("");
 
-	const directionCardHandler = (id) => {
+	const categories = [
+		...new Set(therapistData.flatMap((data) => data.category)),
+	];
+
+	const language = [...new Set(therapistData.flatMap((data) => data.language))];
+
+	const togglePopup = (id) => {
+		if (id === "02") {
+			setShowQuestionsPopup(!showQuestionsPopup);
+		}
 		if (id === "03") {
 			setShowContactPopup(!showContactPopup);
 		}
 	};
-
+	// filter logic bellow
 	const changeFilter = (e) => {
 		setSearchBarFilter(e.target.value);
 	};
@@ -42,8 +48,33 @@ const App = () => {
 			therapist[key].toLowerCase().startsWith(searchBarFilter.toLowerCase())
 		);
 
-	const filteredTherapists = therapistData.filter(searchFilter);
+	const changeCategory = (e) => {
+		setCategoriesFilter(e.target.value);
+	};
 
+	const changeLanguage = (e) => {
+		setLanguageFilter(e.target.value);
+	};
+
+	const categoryFilter = (therapist) => {
+		if (categoriesFilter.length === 0) {
+			return true;
+		}
+		return therapist.category.includes(categoriesFilter);
+	};
+
+	const langFilter = (therapist) => {
+		if (languageFilter.length === 0) {
+			return true;
+		}
+		return therapist.language.includes(languageFilter);
+	};
+
+	const filteredTherapists = therapistData
+		.filter(searchFilter)
+		.filter(categoryFilter)
+		.filter(langFilter);
+	// should be moved to json?
 	const directionCardData = [
 		{ key: "01", img: directionImgOne, text: "Använd filtersystemet" },
 		{ key: "02", img: directionImgTwo, text: "Svara på frågor" },
@@ -55,27 +86,25 @@ const App = () => {
 			<Navbar />
 			<Hero />
 			<DirectionCardWrapper
-				directionCardHandler={directionCardHandler}
+				togglePopup={togglePopup}
 				directionCardData={directionCardData}
 			/>
 			{showContactPopup && <PopupContactCard />}
+			{showQuestionsPopup && <QuestionForm questions={questions} />}
 			<Filter
 				changeFilter={changeFilter}
+				changeCategory={changeCategory}
+				changeLanguage={changeLanguage}
 				selected={selected}
 				setSelected={setSelected}
-				lokal={lokal}
-				region={region}
-				tematik={tematik}
-				format={format}
+				categories={categories}
+				language={language}
+				categoriesFilter={categoriesFilter}
+				languageFilter={languageFilter}
 			/>
 			<CardList therapistData={filteredTherapists} />
 
 			<TherapistInfo therapistData={therapistData} />
-			<div className="card">
-				{cardQuantity.map((cardItem) => (
-					<Card key={cardItem.id}>{cardItem}</Card>
-				))}
-			</div>
 		</div>
 	);
 };

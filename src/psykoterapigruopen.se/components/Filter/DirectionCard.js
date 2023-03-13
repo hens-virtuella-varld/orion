@@ -1,6 +1,6 @@
-const DirectionCard = ({ data, directionCardHandler }) => {
+const DirectionCard = ({ data, togglePopup }) => {
 	return (
-		<div onClick={() => directionCardHandler(data.key)}>
+		<div onClick={() => togglePopup(data.key)}>
 			<img src={data.img} alt="" />
 			<h3>{data.text}</h3>
 		</div>
