@@ -1,0 +1,72 @@
+.contact-container {
+	padding: 1rem 3rem;
+}
+.content {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+.contact-form {
+	padding: 3rem 0;
+}
+form {
+	display: flex;
+	width: 100%;
+}
+.left-form,
+.right-form {
+	width: 50%;
+}
+.left-form {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+.left-form input {
+	width: 200px;
+	padding: 8px 16px;
+	border-radius: 0.5rem;
+	border: 1px solid #cccccc;
+	margin-top: 0.5rem;
+}
+.left-form select {
+	width: 180px;
+	padding: 8px 16px;
+	border-radius: 0.5rem;
+	border: 1px solid #cccccc;
+}
+/*  */
+.right-form {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+.right-form textarea {
+	border-radius: 0.5rem;
+	border: 1px solid #000000;
+	padding: 1rem;
+	margin-top: 0.5rem;
+}
+.right-form .rightflex {
+	display: flex;
+	gap: 1rem;
+}
+.rightflex button {
+	margin-top: 5rem;
+	margin-left: 3rem;
+	padding: 8px 16px;
+	border-radius: 1rem;
+	background-color: #e1efef;
+	border: none;
+	font-size: 1rem;
+}
+@media screen and (max-width: 992px) {
+	form {
+		flex-direction: column;
+	}
+
+	.left-form,
+	.right-form {
+		width: 100%;
+	}
+}

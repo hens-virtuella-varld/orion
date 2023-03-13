@@ -13,6 +13,9 @@ import directionImgThree from "./psykoterapigruopen.se/assets/orion-svara-pa-fra
 import PopupContactCard from "./psykoterapigruopen.se/components/Filter/ContactPopup/PopupContactCard";
 import questions from "./psykoterapigruopen.se/questions.json";
 import QuestionForm from "./psykoterapigruopen.se/components/Filter/QuestionFilter/QuestionFrom";
+import Profile from './components/Profile'
+import Contact from './components/Contact'
+
 
 const App = () => {
 	const [showContactPopup, setShowContactPopup] = useState(false);
@@ -105,6 +108,8 @@ const App = () => {
 			<CardList therapistData={filteredTherapists} />
 
 			<TherapistInfo therapistData={therapistData} />
+			<Profile/>
+			<Contact/>
 		</div>
 	);
 };
