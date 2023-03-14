@@ -1,4 +1,7 @@
 .cardListContainer {
+	padding: 2rem 5rem;
+	width: 100vw;
 	display: flex;
-	margin: 1rem;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }

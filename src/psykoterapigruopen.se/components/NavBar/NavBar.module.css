@@ -1,0 +1,10 @@
+.navBarContainer {
+	height: 160px;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #c3e0df;
+	gap: 1rem;
+}

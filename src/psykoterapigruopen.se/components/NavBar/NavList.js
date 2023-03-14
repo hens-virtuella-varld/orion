@@ -1,9 +1,10 @@
 import arrowImage from "../../assets/orion-arrow.svg";
+import NavListCss from "./NavList.module.css";
 
 const NavList = () => {
 	return (
 		<div>
-			<ul>
+			<ul className={NavListCss.navListContainer}>
 				<li>
 					Handledning <img src={arrowImage} alt="arrow icon" />
 				</li>

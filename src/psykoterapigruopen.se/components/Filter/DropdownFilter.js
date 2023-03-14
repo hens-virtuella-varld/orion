@@ -1,3 +1,5 @@
+import DropdownFilterCss from "./DropdownFilter.module.css";
+
 const DropdownFilter = ({
 	categories,
 	language,
@@ -7,9 +9,9 @@ const DropdownFilter = ({
 	languageFilter,
 }) => {
 	return (
-		<div>
+		<div className={DropdownFilterCss.container}>
 			<select value={categoriesFilter} onChange={changeCategory}>
-				<option value="">Kategorier</option>
+				<option value="">Alla kategorier</option>
 				{categories.map((category, i) => (
 					<option key={i} value={category}>
 						{category}
@@ -17,7 +19,7 @@ const DropdownFilter = ({
 				))}
 			</select>
 			<select value={languageFilter} onChange={changeLanguage}>
-				<option value="">Språk</option>
+				<option value="">Alla språk</option>
 				{language.map((lang, i) => (
 					<option key={i} value={lang}>
 						{lang}

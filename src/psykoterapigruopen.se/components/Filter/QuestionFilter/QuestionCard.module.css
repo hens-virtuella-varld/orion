@@ -1,0 +1,24 @@
+.container {
+	margin-top: 6rem;
+	background-color: white;
+	width: 55vw;
+	padding: 4rem 8rem;
+	border-radius: 30px;
+}
+
+.container h3 {
+	font-size: 30px;
+	color: #3f6a6a;
+}
+
+.container li {
+	display: flex;
+	color: #3f6a6a;
+	margin: 1rem 0;
+	font-size: 20px;
+}
+
+.container li input {
+	margin-right: 0.75rem;
+	width: 1.25rem;
+}

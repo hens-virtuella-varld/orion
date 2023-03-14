@@ -13,14 +13,26 @@ import directionImgThree from "./psykoterapigruopen.se/assets/orion-svara-pa-fra
 import PopupContactCard from "./psykoterapigruopen.se/components/Filter/ContactPopup/PopupContactCard";
 import questions from "./psykoterapigruopen.se/questions.json";
 import QuestionForm from "./psykoterapigruopen.se/components/Filter/QuestionFilter/QuestionFrom";
+import Footer from "./psykoterapigruopen.se/components/Footer/Footer";
+import RecommendedTherapists from "./psykoterapigruopen.se/components/Filter/QuestionFilter/RecommendedTherapists";
 
 const App = () => {
+	const [showFilterPopup, setShowFilterPopup] = useState(true);
 	const [showContactPopup, setShowContactPopup] = useState(false);
 	const [showQuestionsPopup, setShowQuestionsPopup] = useState(false);
+
 	const [selected, setSelected] = useState("");
 	const [searchBarFilter, setSearchBarFilter] = useState("");
 	const [categoriesFilter, setCategoriesFilter] = useState("");
 	const [languageFilter, setLanguageFilter] = useState("");
+
+	const [questionValue, setQuestionValue] = useState("");
+
+	const handleStateChange = (newValue) => {
+		setQuestionValue(newValue);
+	};
+
+	const showRecommended = questionValue === 5;
 
 	const categories = [
 		...new Set(therapistData.flatMap((data) => data.category)),
@@ -29,11 +41,23 @@ const App = () => {
 	const language = [...new Set(therapistData.flatMap((data) => data.language))];
 
 	const togglePopup = (id) => {
+		if (id === "01") {
+			setShowFilterPopup(true);
+			setShowQuestionsPopup(false);
+			setShowContactPopup(false);
+			setQuestionValue("");
+		}
 		if (id === "02") {
-			setShowQuestionsPopup(!showQuestionsPopup);
+			setShowQuestionsPopup(true);
+			setShowFilterPopup(false);
+			setShowContactPopup(false);
+			setQuestionValue("");
 		}
 		if (id === "03") {
-			setShowContactPopup(!showContactPopup);
+			setShowContactPopup(true);
+			setShowFilterPopup(false);
+			setShowQuestionsPopup(false);
+			setQuestionValue("");
 		}
 	};
 	// filter logic bellow
@@ -90,21 +114,33 @@ const App = () => {
 				directionCardData={directionCardData}
 			/>
 			{showContactPopup && <PopupContactCard />}
-			{showQuestionsPopup && <QuestionForm questions={questions} />}
-			<Filter
-				changeFilter={changeFilter}
-				changeCategory={changeCategory}
-				changeLanguage={changeLanguage}
-				selected={selected}
-				setSelected={setSelected}
-				categories={categories}
-				language={language}
-				categoriesFilter={categoriesFilter}
-				languageFilter={languageFilter}
-			/>
-			<CardList therapistData={filteredTherapists} />
+			{!showRecommended && showQuestionsPopup && (
+				<QuestionForm
+					questions={questions}
+					handleStateChange={handleStateChange}
+				/>
+			)}
+			{showRecommended && (
+				<RecommendedTherapists therapistData={therapistData} />
+			)}
+			{showFilterPopup && (
+				<Filter
+					changeFilter={changeFilter}
+					changeCategory={changeCategory}
+					changeLanguage={changeLanguage}
+					selected={selected}
+					setSelected={setSelected}
+					categories={categories}
+					language={language}
+					categoriesFilter={categoriesFilter}
+					languageFilter={languageFilter}
+				/>
+			)}
+			{showFilterPopup && <CardList therapistData={filteredTherapists} />}
 
-			<TherapistInfo therapistData={therapistData} />
+			<Footer />
+
+			{/* <TherapistInfo therapistData={therapistData} /> */}
 		</div>
 	);
 };

@@ -1,0 +1,76 @@
+.container {
+	width: 100vw;
+	background-color: #c3e0df;
+	color: #3a3a3a;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 3rem;
+	margin-top: 6rem;
+	font-size: 24px;
+}
+
+.container h2 {
+	font-size: 48px;
+	color: #3f6a6a;
+}
+
+.colOne {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 3rem;
+}
+
+.colTwo {
+	margin-top: 3rem;
+}
+
+.colTwo input {
+	width: 40%;
+	height: 55px;
+	border-radius: 20px;
+	border: none;
+}
+
+.colOneItem {
+	width: 100%;
+}
+.colOneItem input {
+	width: 80%;
+	height: 55px;
+	border-radius: 20px;
+	border: none;
+}
+
+.form {
+	width: 80%;
+}
+
+.textareaContainer {
+	width: 100%;
+	margin-top: 3rem;
+}
+
+.container textarea {
+	resize: none;
+	width: 100%;
+	border-radius: 20px;
+	border: none;
+}
+
+.colFour {
+	display: flex;
+	justify-content: space-between;
+	font-size: 16px;
+	align-items: center;
+}
+
+.colFour button {
+	font-size: 28px;
+	font-weight: 600;
+	background-color: #69b1b0;
+	color: white;
+	border: none;
+	border-radius: 30px;
+	padding: 0.5rem 2rem;
+}

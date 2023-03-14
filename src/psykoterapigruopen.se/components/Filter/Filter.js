@@ -12,8 +12,8 @@ const Filter = ({
 	languageFilter,
 }) => {
 	return (
-		<div className={filterCSS.filterSection}>
-			<form>
+		<div>
+			<form className={filterCSS.filterSection}>
 				<SearchBar changeFilter={changeFilter} />
 				<DropdownFilter
 					categories={categories}
