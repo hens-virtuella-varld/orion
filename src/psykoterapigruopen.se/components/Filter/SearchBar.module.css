@@ -1,0 +1,25 @@
+.container {
+	display: flex;
+	justify-content: center;
+}
+
+.input {
+	width: 26rem;
+	border: none;
+	border-bottom: black solid 1px;
+}
+
+.input::placeholder {
+	color: #3a3a3a;
+	font-size: 20px;
+}
+
+.input:focus {
+	outline: none;
+}
+
+.icon {
+	width: 25px;
+	border-bottom: black solid 1px;
+	padding-right: 0.5rem;
+}

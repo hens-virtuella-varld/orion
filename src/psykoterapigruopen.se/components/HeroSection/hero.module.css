@@ -1,3 +1,58 @@
-.topHero {
+.heroContainer {
+	margin-top: 6rem;
 	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.topHeroOuter {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-bottom: 1px dashed black;
+}
+
+.topHero {
+	max-width: 90vw;
+	display: flex;
+}
+
+.topHeroText {
+	font-size: 24px;
+	max-width: 35rem;
+	margin: 2rem 0;
+}
+
+.lowerHero {
+	margin-top: 6rem;
+	max-width: 90vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-bottom: 1px dashed black;
+}
+
+.lowerHeroTextContainer {
+	background-color: #f9d2e5;
+	font-size: 26px;
+}
+
+.lowerHeroInner {
+	display: flex;
+	flex-direction: row;
+}
+
+.lowerHeroTextContainer h2 {
+	font-weight: 600;
+	font-size: 30px;
+}
+
+.lowerHeroLowerText {
+	font-weight: 600;
+	font-size: 26px;
+	padding-top: 5rem;
+}
+
+.arrowBigger {
+	padding-bottom: 1rem;
 }

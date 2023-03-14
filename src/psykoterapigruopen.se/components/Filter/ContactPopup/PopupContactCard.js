@@ -1,25 +1,47 @@
-import map from "../../../assets/orion-map.png";
+import PopupContactCardCss from "./PopupContactCard.module.css";
 
 const PopupContactCard = () => {
 	return (
-		<div>
-			<h2>
-				You can directly call, email, or visit our office for get help finding a
-				perfect therapist.
-			</h2>
-			<div>
-				<p>Contact information : 1234567890</p>
-				<p>Contact information : 1234567890</p>
-				<p>Email address : test@test.com</p>
-			</div>
-			<img src={map} alt="Google Map" />
-			<form action="">
-				<label></label>
-				<input
-					type="text"
-					placeholder="Send your massage here, and we will get back to you as soon as possible..."
-				></input>
-				<button>Send the message</button>
+		<div className={PopupContactCardCss.container}>
+			<h2>Fyll i din information så kontaktar vi dig</h2>
+			<form className={PopupContactCardCss.form}>
+				<div className={PopupContactCardCss.colOne}>
+					<div className={PopupContactCardCss.colOneItem}>
+						<h4>Fyll i ditt namn här</h4>
+						<input type="text" />
+					</div>
+					<div className={PopupContactCardCss.colOneItem}>
+						<h4>Var god skriv ditt telefonnummer här</h4>
+						<input type="text" />
+					</div>
+				</div>
+				<div className={PopupContactCardCss.colTwo}>
+					<h4>Var god skriv din e-postadress här</h4>
+					<input type="text" />
+				</div>
+				<div className={PopupContactCardCss.textareaContainer}>
+					<h4>Här kan du skriva din situation och vad duvill ha hjälp med</h4>
+					<textarea name="" id="" cols="30" rows="10"></textarea>
+				</div>
+				<div className={PopupContactCardCss.colFour}>
+					<div className={PopupContactCardCss.checkboxContainer}>
+						<div>
+							<input type="checkbox" />
+							Jag instämmer att den information jag har angivit stämmer.
+						</div>
+						<div>
+							<input type="checkbox" />
+							Jag godkänner att Psykoterapigruppen Orion kontaktar mig.
+						</div>
+						<div>
+							<input type="checkbox" />
+							Jag samtycker till villkoren på Psykoterapigruppen Orions hemsida.
+						</div>
+					</div>
+					<div>
+						<button>Skicka</button>
+					</div>
+				</div>
 			</form>
 		</div>
 	);

@@ -1,0 +1,17 @@
+.navListContainer {
+	display: flex;
+	justify-content: space-around;
+}
+
+.navListContainer li {
+	font-weight: 400;
+	font-size: 20px;
+	margin: 0 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.navListContainer li img {
+	margin: 0.5rem;
+}

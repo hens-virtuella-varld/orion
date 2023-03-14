@@ -1,0 +1,10 @@
+.container {
+	display: flex;
+	justify-content: space-around;
+}
+
+.container select {
+	appearance: none;
+	border-radius: 1rem;
+	padding: 0.25rem 1rem;
+}

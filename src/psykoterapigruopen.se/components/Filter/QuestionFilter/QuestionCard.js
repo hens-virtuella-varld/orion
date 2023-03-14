@@ -1,6 +1,8 @@
+import QuestionCardCss from "./QuestionCard.module.css";
+
 const QuestionCard = ({ currentQuestion }) => {
 	return (
-		<div>
+		<div className={QuestionCardCss.container}>
 			<h3>{currentQuestion.question}</h3>
 			<ul>
 				<li>
