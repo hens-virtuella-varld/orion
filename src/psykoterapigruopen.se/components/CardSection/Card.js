@@ -1,8 +1,12 @@
 import CardCss from "./Card.module.css";
-
+import { useNavigate } from "react-router-dom";
 const Card = ({ therapist }) => {
+	const navigate = useNavigate()
+	const handleClick = () =>{
+		navigate('/profile')
+	}
 	return (
-		<div className={CardCss.container}>
+		<div onClick={handleClick} className={CardCss.container}>
 			<div className={CardCss.innerContainer}>
 				<img src={therapist.img} alt="Therapist profile" />
 				<div className={CardCss.cardColOne}>
