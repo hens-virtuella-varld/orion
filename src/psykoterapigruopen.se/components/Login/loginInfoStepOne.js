@@ -1,26 +1,36 @@
+import loginInfoStepOneCss from "./loginInfoStepOne.module.css";
+
 const loginInfoStepOne = () => {
 	return (
-		<div>
-			<h2>Fyll i information nedan</h2>
-			<div>
-				<label>Förnamn</label>
-				<input type="text" placeholder="Fyll i ditt förnamn" />
-				<label>Telefonnummer</label>
-				<input type="text" placeholder="+46 123 456 789" />
-			</div>
-			<div>
-				<label>Efternamn</label>
-				<input type="text" placeholder="Fyll i ditt förnamn" />
-				<h3>Hur erbjuder du att träffa patienter?</h3>
-				<div>
-					<button>Bara på kontor</button>
-					<button>Bara videosamtal</button>
-					<button>Båda</button>
+		<div className={loginInfoStepOneCss.container}>
+			<h2 className={loginInfoStepOneCss.title}>Fyll i information nedan</h2>
+			<div className={loginInfoStepOneCss.questionsContainer}>
+				<div className={loginInfoStepOneCss.question}>
+					<label>Förnamn</label>
+					<input type="text" placeholder="Fyll i ditt förnamn" />
+				</div>
+				<div className={loginInfoStepOneCss.question}>
+					<label>Efternamn</label>
+					<input type="text" placeholder="Fyll i ditt förnamn" />
+				</div>
+				<div className={loginInfoStepOneCss.question}>
+					<label>Välj vilka språk du erbjuder</label>
+					<select name="" id=""></select>
+					<option value="Språk">Språk</option>
+				</div>
+				<div className={loginInfoStepOneCss.question}>
+					<label>Telefonnummer</label>
+					<input type="text" placeholder="+46 123 456 789" />
+				</div>
+				<div className={loginInfoStepOneCss.question}>
+					<h3>Hur erbjuder du att träffa patienter?</h3>
+					<div className={loginInfoStepOneCss.btns}>
+						<button>Bara på kontor</button>
+						<button>Bara videosamtal</button>
+						<button>Båda</button>
+					</div>
 				</div>
 			</div>
-			<label>Välj vilka språk du erbjuder</label>
-			<select name="" id=""></select>
-			<option value="Språk">Språk</option>
 		</div>
 	);
 };
