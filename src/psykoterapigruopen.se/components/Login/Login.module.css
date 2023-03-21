@@ -6,7 +6,8 @@
 .rightColumn {
 	display: flex;
 	flex-direction: column;
-	width: 50vw;
+	width: 40vw;
+	margin-right: 10vw;
 }
 
 .leftColumn {
@@ -29,6 +30,7 @@
 .leftColumnRow {
 	display: flex;
 	flex-direction: row;
+	margin-bottom: 3rem;
 }
 
 .checkbox {
@@ -43,14 +45,66 @@
 
 .leftColumn p {
 	font-size: 20px;
+	margin-top: 0.5rem;
+	margin-bottom: 1.5rem;
 }
 
 .btn {
-	margin: 1rem;
+	margin: 0.5rem;
+	padding: 0.2rem 1rem;
+	border-radius: 10px;
+}
+
+.btnSelected {
+	background-color: white;
 }
 
 .inputContainer {
 	display: flex;
 	flex-direction: column;
 	font-size: 18px;
+}
+
+.LoginBtnContainer {
+	display: flex;
+	flex-direction: column;
+}
+
+.loginBtn {
+	font-size: 18px;
+	border-radius: 10px;
+	padding: 0.5rem;
+	margin: 0.3rem;
+	border: none;
+	color: white;
+	background-color: #3f6a6a;
+	cursor: pointer;
+}
+
+.loginBtnGoogle {
+	color: black;
+	background-color: white;
+	border: 1px solid #989797;
+}
+
+.inputContainer {
+	margin-bottom: 1rem;
+}
+
+.loginInput {
+	border-radius: 6px;
+	border: 1px solid #989797;
+	padding: 0.25rem;
+	margin-top: 0.5rem;
+}
+
+.rememberMe {
+	color: #3a3a3a;
+	font-size: 14px;
+	margin-right: 0.5rem;
+}
+
+.forgetPassword {
+	font-size: 14px;
+	color: #3f6a6a;
 }

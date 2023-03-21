@@ -1,7 +1,17 @@
+import { useState } from "react";
 import SignUpImg from "../../assets/sign-up-orion.png";
 import LoginCss from "./Login.module.css";
 
 const Login = () => {
+	const [selectedButton, setSelectedButton] = useState(true);
+
+	const handleClickRegister = () => {
+		setSelectedButton(true);
+	};
+	const handleClickLogin = () => {
+		setSelectedButton(false);
+	};
+
 	return (
 		<div className={LoginCss.container}>
 			<div className={LoginCss.leftColumn}>
@@ -9,8 +19,17 @@ const Login = () => {
 				<p>Registrera dina uppgifter här</p>
 				<div>
 					<div className={LoginCss.leftColumnToggle}>
-						<div className={LoginCss.btn}>Registrera dig</div>
-						<div className={LoginCss.btn}>Logga in</div>
+						<div
+							onClick={handleClickRegister}
+							className={`${LoginCss.btn} ${
+								selectedButton && LoginCss.btnSelected}
+							}`}
+						>
+							Registrera dig
+						</div>
+						<div onClick={handleClickLogin} className={`${LoginCss.btn} ${
+								!selectedButton && LoginCss.btnSelected}
+							}`}>Logga in</div>
 					</div>
 				</div>
 				<form action="">
@@ -21,24 +40,33 @@ const Login = () => {
 							name=""
 							id=""
 							placeholder="Ange din e-postadress"
+							className={LoginCss.loginInput}
 						/>
 					</div>
 					<div className={LoginCss.inputContainer}>
 						<label htmlFor="">Lösenord</label>
-						<input type="password" name="" id="" />
+						<input
+							className={LoginCss.loginInput}
+							type="password"
+							name=""
+							id=""
+						/>
 					</div>
 					<div className={LoginCss.leftColumnRow}>
 						<div className={LoginCss.checkbox}>
 							<input type="checkbox" />
-							<div>Kom ihåg mina uppgifter</div>
+							<div className={LoginCss.rememberMe}>Kom ihåg mina uppgifter</div>
 						</div>
-						<div>Glömt lösenord</div>
+						<div className={LoginCss.forgetPassword}>Glömt lösenord</div>
 					</div>
-					<button>Logga in</button>
-					<button>
-						<img src="" alt="" />
-						Logga in med Google
-					</button>
+					<div className={LoginCss.LoginBtnContainer}>
+						<button className={LoginCss.loginBtn}>Logga in</button>
+						<button
+							className={`${LoginCss.loginBtn} ${LoginCss.loginBtnGoogle}`}
+						>
+							Logga in med Google
+						</button>
+					</div>
 				</form>
 			</div>
 			<div className={LoginCss.rightColumn}>
