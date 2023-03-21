@@ -2,6 +2,9 @@ import LoginInfoStepOne from "./loginInfoStepOne";
 import LoginInfoStepTwo from "./loginInfoStepTwo";
 import LoginInfoStepThree from "./loginInfoStepThree";
 import LoginInfoStepFour from "./loginInfoStepFour";
+import LoginInfoStepSix from "./loginInfoStepSix";
+import LoginDone from "./loginDone";
+import { useNavigate } from "react-router-dom";
 
 import LoginInfoStepFive from "./loginInfoStepFive";
 
@@ -13,7 +16,11 @@ const LoginContainer = () => {
 	const [currentSignUpStep, setCurrentSignUpStep] = useState(0);
 
 	const handlNextClick = () => {
-		setCurrentSignUpStep(currentSignUpStep + 1);
+		if (currentSignUpStep === 5) {
+			navigate("/");
+		} else {
+			setCurrentSignUpStep(currentSignUpStep + 1);
+		}
 	};
 
 	const handlPrevClick = () => {
@@ -40,11 +47,17 @@ const LoginContainer = () => {
 		case 4:
 			currentStepComponent = <LoginInfoStepFive />;
 			break;
+		case 5:
+			currentStepComponent = <LoginInfoStepSix />;
+			break;
+		case 6:
+			currentStepComponent = <LoginDone />;
+			break;
 	}
 
 	const counter = [];
 
-	for (let i = 0; i < 5; i++) {
+	for (let i = 0; i < 6; i++) {
 		const isCurrent = currentSignUpStep === i;
 		const currentStyle = {
 			backgroundColor: isCurrent ? "#69B1B0" : "#D9D9D9",
@@ -59,9 +72,10 @@ const LoginContainer = () => {
 		);
 	}
 
+	const navigate = useNavigate();
+
 	return (
 		<div>
-
 			{currentStepComponent}
 
 			<div className={LoginContainerCss.progressContainer}>

@@ -1,0 +1,19 @@
+.heading {
+	font-size: 48px;
+	font-weight: 600;
+}
+.container {
+	display: flex;
+}
+
+.leftColumn {
+	display: flex;
+	flex-direction: column;
+	width: 50vw;
+}
+
+.rightColumn {
+	display: flex;
+	flex-direction: column;
+	width: 50vw;
+}
