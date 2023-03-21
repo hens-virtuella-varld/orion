@@ -61,6 +61,7 @@ const LoginContainer = () => {
 
 	return (
 		<div>
+
 			{currentStepComponent}
 
 			<div className={LoginContainerCss.progressContainer}>

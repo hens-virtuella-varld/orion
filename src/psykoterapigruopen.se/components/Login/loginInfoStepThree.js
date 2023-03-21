@@ -1,6 +1,6 @@
 import LoginInfoStepThreeCss from "./loginInfoStepThree.module.css";
 
-const LoginInfoStepThree = () => {
+const loginInfoStepThree = () => {
 	return (
 		<div className={LoginInfoStepThreeCss.container}>
 			<h2 className={LoginInfoStepThreeCss.title}>Titel och information</h2>
@@ -28,7 +28,7 @@ const LoginInfoStepThree = () => {
 "
 				/>
 				<div>
-					<div className={LoginInfoStepThreeCss.questionSelection}>
+					<div className={LoginInfoStepThreeCss.questionsSelection}>
 						<div>
 							<div
 								className={`${LoginInfoStepThreeCss.btnPoint} ${LoginInfoStepThreeCss.selected}`}
@@ -48,4 +48,4 @@ const LoginInfoStepThree = () => {
 	);
 };
 
-export default LoginInfoStepThree;
+export default loginInfoStepThree;
