@@ -1,8 +1,9 @@
+import LoginInfoStepSix from "./loginInfoStepSix.module.css";
 const loginInfoStepSix = () => {
 	return (
-		<div>
-			<div>
-				<h2>Andra detaljer</h2>
+		<div className={LoginInfoStepSix.container}>
+			<div className={LoginInfoStepSix.leftColumn}>
+				<h2 className={LoginInfoStepSix.heading}>Andra detaljer</h2>
 				<h3>Var god fyll i information nedan</h3>
 				<label>Pris</label>
 				<input type="text" placeholder="Skriv ditt pris per timme här" />
@@ -13,7 +14,7 @@ const loginInfoStepSix = () => {
 				<button>Ja</button>
 				<button>Nej</button>
 			</div>
-			<div>
+			<div className={LoginInfoStepSix.rightColumn}>
 				<div>
 					<input type="checkbox" />
 					<div>
