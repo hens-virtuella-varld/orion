@@ -25,7 +25,7 @@
 	display: flex;
 }
 
-.stepCounterContainer div {
+.stepCounterContainerStep {
 	width: 77px;
 	height: 6px;
 	background-color: #3f6a6a;

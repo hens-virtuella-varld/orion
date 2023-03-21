@@ -9,9 +9,11 @@ const loginInfoStepFour = () => {
 			<h3 className={loginInfoStepFourCss.subtitle}>Tematiska Områden</h3>
 			<div className={loginInfoStepFourCss.expertiseChoicesBox}>
 				<ul>
-					{/* {blabla.map((bla) => ( */}
-					{/* <li>{bla}</li> */}
-					))}
+
+					{/* {blabla.map((bla) => (
+						<li>{bla}</li>
+					))} */}
+
 				</ul>
 			</div>
 			<div className={loginInfoStepFourCss.questionSelection}>
