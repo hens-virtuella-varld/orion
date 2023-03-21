@@ -1,18 +1,20 @@
+
 import LoginInfoStepThreeCss from "./loginInfoStepThree.module.css";
 
-const LoginInfoStepThree = () => {
+
+const loginInfoStepThree = () => {
 	return (
-		<div className={LoginInfoStepThreeCss.container}>
-			<h2 className={LoginInfoStepThreeCss.title}>Titel och information</h2>
-			<div className={LoginInfoStepThreeCss.subtitleWrapper}>
+		<div className={loginInfoStepThreeCss.container}>
+			<h2 className={loginInfoStepThreeCss.title}>Titel och information</h2>
+			<div className={loginInfoStepThreeCss.subtitleWrapper}>
 				<h3>Jag är</h3>
 			</div>
-			<div className={LoginInfoStepThreeCss.choicesContainer}>
-				<div className={LoginInfoStepThreeCss.choice}>
+			<div className={loginInfoStepThreeCss.choicesContainer}>
+				<div className={loginInfoStepThreeCss.choice}>
 					<input type="checkbox" />
 					<p>Leg. Psykoterapeut</p>
 				</div>
-				<div className={LoginInfoStepThreeCss.choice}>
+				<div className={loginInfoStepThreeCss.choice}>
 					<input type="checkbox" />
 					<p>Leg. Psykolog</p>
 				</div>
@@ -23,22 +25,23 @@ const LoginInfoStepThree = () => {
 				<input
 					type="textarea"
 					className={LoginInfoStepThreeCss.textArea}
+
 					placeholder="Beskriv dig själv kortfattat, för att ge en personlig bild/beskrivning av dig som människa.
 (Max 400 tecken, inkl blanksteg) 
 "
 				/>
 				<div>
-					<div className={LoginInfoStepThreeCss.questionSelection}>
+					<div className={loginInfoStepThreeCss.questionSelection}>
 						<div>
 							<div
-								className={`${LoginInfoStepThreeCss.btnPoint} ${LoginInfoStepThreeCss.selected}`}
+								className={`${loginInfoStepThreeCss.btnPoint} ${loginInfoStepThreeCss.selected}`}
 							></div>
-							<div className={LoginInfoStepThreeCss.btnPoint}></div>
-							<div className={LoginInfoStepThreeCss.btnPoint}></div>
-							<div className={LoginInfoStepThreeCss.btnPoint}></div>
-							<div className={LoginInfoStepThreeCss.btnPoint}></div>
+							<div className={loginInfoStepThreeCss.btnPoint}></div>
+							<div className={loginInfoStepThreeCss.btnPoint}></div>
+							<div className={loginInfoStepThreeCss.btnPoint}></div>
+							<div className={loginInfoStepThreeCss.btnPoint}></div>
 						</div>
-						<button className={LoginInfoStepThreeCss.btnNextQuestion}>
+						<button className={loginInfoStepThreeCss.btnNextQuestion}>
 							Nästa fråga
 						</button>
 					</div>
@@ -48,4 +51,4 @@ const LoginInfoStepThree = () => {
 	);
 };
 
-export default LoginInfoStepThree;
+export default loginInfoStepThree;
