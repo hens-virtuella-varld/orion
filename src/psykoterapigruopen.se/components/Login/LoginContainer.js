@@ -1,5 +1,6 @@
 import LoginInfoStepOne from "./loginInfoStepOne";
 import LoginInfoStepTwo from "./loginInfoStepTwo";
+import LoginInfoStepThree from "./loginInfoStepThree";
 import LoginContainerCss from "./LoginContainer.module.css";
 
 const loginContainer = () => {
@@ -7,6 +8,7 @@ const loginContainer = () => {
 		<div>
 			<LoginInfoStepOne />
 			<LoginInfoStepTwo />
+			<LoginInfoStepThree />
 			<div className={LoginContainerCss.progressContainer}>
 				<div>
 					<button
