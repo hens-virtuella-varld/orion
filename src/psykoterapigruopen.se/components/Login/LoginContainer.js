@@ -2,7 +2,9 @@ import LoginInfoStepOne from "./loginInfoStepOne";
 import LoginInfoStepTwo from "./loginInfoStepTwo";
 import LoginInfoStepThree from "./loginInfoStepThree";
 import LoginInfoStepFour from "./loginInfoStepFour";
+
 import LoginInfoStepFive from "./loginInfoStepFive";
+
 import LoginContainerCss from "./LoginContainer.module.css";
 
 import { useState } from "react";
@@ -59,7 +61,9 @@ const LoginContainer = () => {
 
 	return (
 		<div>
+
 			{currentStepComponent}
+
 			<div className={LoginContainerCss.progressContainer}>
 				<div>
 					<button
