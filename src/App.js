@@ -8,6 +8,7 @@ import Filter from "./psykoterapigruopen.se/components/Filter/Filter";
 import TherapistInfo from "./psykoterapigruopen.se/components/CardSection/TherapistInfo";
 import Login from "./psykoterapigruopen.se/components/Login/Login";
 import DirectionCardWrapper from "./psykoterapigruopen.se/components/Filter/DirectionCardWrapper";
+import LoginContainer from "./psykoterapigruopen.se/components/Login/LoginContainer";
 import directionImgOne from "./psykoterapigruopen.se/assets/orion-filtersystem.svg";
 import directionImgTwo from "./psykoterapigruopen.se/assets/orion-fa-personlig-hjalp.svg";
 import directionImgThree from "./psykoterapigruopen.se/assets/orion-svara-pa-fragor.svg";
@@ -121,6 +122,7 @@ const App = () => {
 		<div className="App">
 			<Navbar />
 			<Login />
+			<LoginContainer />
 			<Hero
 				sectionOneHandleClick={sectionOneHandleClick}
 				sectionTwohandleClick={sectionTwohandleClick}
