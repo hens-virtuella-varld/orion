@@ -4,7 +4,11 @@ import akutIllustrationImage from "../../assets/orion-akut-illustration.svg";
 import arrowBig from "../../assets/orion-arrow-bigger.svg";
 import heroCSS from "./hero.module.css";
 
-const Hero = () => {
+const Hero = ({
+	sectionOneHandleClick,
+	sectionTwohandleClick,
+	sectionOneScroll,
+}) => {
 	return (
 		<div className={heroCSS.heroContainer}>
 			<div className={heroCSS.topHeroOuter}>
@@ -27,9 +31,14 @@ const Hero = () => {
 					</div>
 					<img src={huggingBrainImage} alt="Orion Hero" />
 				</div>
-				<img src={arrowBig} alt="" className={heroCSS.arrowBigger} />
+				<img
+					src={arrowBig}
+					alt=""
+					className={heroCSS.arrowBigger}
+					onClick={sectionOneHandleClick}
+				/>
 			</div>
-			<div className={heroCSS.lowerHero}>
+			<div className={heroCSS.lowerHero} ref={sectionOneScroll}>
 				<div className={heroCSS.lowerHeroInner}>
 					<div className={heroCSS.lowerHeroTextContainer}>
 						<h2>Om det är brottom </h2>
@@ -41,7 +50,12 @@ const Hero = () => {
 					</div>
 				</div>
 				<p className={heroCSS.lowerHeroLowerText}>Hitta din terapeut!</p>
-				<img src={arrowBig} alt="" className={heroCSS.arrowBigger} />
+				<img
+					src={arrowBig}
+					alt=""
+					className={heroCSS.arrowBigger}
+					onClick={sectionTwohandleClick}
+				/>
 			</div>
 		</div>
 	);

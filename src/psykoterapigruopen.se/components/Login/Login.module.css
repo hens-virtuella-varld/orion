@@ -1,0 +1,56 @@
+.container {
+	margin-top: 6rem;
+	display: flex;
+}
+
+.rightColumn {
+	display: flex;
+	flex-direction: column;
+	width: 50vw;
+}
+
+.leftColumn {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 50vw;
+}
+
+.leftColumnToggle {
+	font-size: 18px;
+	font-weight: 600;
+	display: flex;
+	flex-direction: row;
+	background-color: #c3e0df;
+	color: #3f6a6a;
+	border-radius: 10px;
+}
+
+.leftColumnRow {
+	display: flex;
+	flex-direction: row;
+}
+
+.checkbox {
+	display: flex;
+	flex-direction: row;
+}
+
+.leftColumn h2 {
+	font-weight: 600;
+	font-size: 48px;
+}
+
+.leftColumn p {
+	font-size: 20px;
+}
+
+.btn {
+	margin: 1rem;
+}
+
+.inputContainer {
+	display: flex;
+	flex-direction: column;
+	font-size: 18px;
+}
