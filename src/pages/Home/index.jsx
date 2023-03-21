@@ -1,12 +1,14 @@
 import "../../App.css";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import therapistData from "../../psykoterapigruopen.se/therapists.json";
 import Navbar from "../../psykoterapigruopen.se/components/NavBar/NavBar";
 import Hero from "../../psykoterapigruopen.se/components/HeroSection/Hero";
 import CardList from "../../psykoterapigruopen.se/components/CardSection/CardList";
 import Filter from "../../psykoterapigruopen.se/components/Filter/Filter";
-import TherapistInfo from "../../psykoterapigruopen.se/components/CardSection/TherapistInfo";
+
+import Login from "../../psykoterapigruopen.se/components/Login/Login";
 import DirectionCardWrapper from "../../psykoterapigruopen.se/components/Filter/DirectionCardWrapper";
+import LoginContainer from "../../psykoterapigruopen.se/components/Login/LoginContainer";
 import directionImgOne from "../../psykoterapigruopen.se/assets/orion-filtersystem.svg";
 import directionImgTwo from "../../psykoterapigruopen.se/assets/orion-fa-personlig-hjalp.svg";
 import directionImgThree from "../../psykoterapigruopen.se/assets/orion-svara-pa-fragor.svg";
@@ -15,7 +17,8 @@ import questions from "../../psykoterapigruopen.se/questions.json";
 import QuestionForm from "../../psykoterapigruopen.se/components/Filter/QuestionFilter/QuestionFrom";
 import Footer from "../../psykoterapigruopen.se/components/Footer/Footer";
 import RecommendedTherapists from "../../psykoterapigruopen.se/components/Filter/QuestionFilter/RecommendedTherapists";
-const Home = () => {
+
+const App = () => {
 	const [showFilterPopup, setShowFilterPopup] = useState(true);
 	const [showContactPopup, setShowContactPopup] = useState(false);
 	const [showQuestionsPopup, setShowQuestionsPopup] = useState(false);
@@ -26,6 +29,17 @@ const Home = () => {
 	const [languageFilter, setLanguageFilter] = useState("");
 
 	const [questionValue, setQuestionValue] = useState("");
+
+	const sectionOneScroll = useRef(null);
+	const sectionTwoScroll = useRef(null);
+
+	const sectionOneHandleClick = () => {
+		sectionOneScroll.current.scrollIntoView({ behavior: "smooth" });
+	};
+
+	const sectionTwohandleClick = () => {
+		sectionTwoScroll.current.scrollIntoView({ behavior: "smooth" });
+	};
 
 	const handleStateChange = (newValue) => {
 		setQuestionValue(newValue);
@@ -107,11 +121,20 @@ const Home = () => {
 	return (
 		<div className="App">
 			<Navbar />
-			<Hero />
+			<Login />
+			<LoginContainer />
+			<Hero
+				sectionOneHandleClick={sectionOneHandleClick}
+				sectionTwohandleClick={sectionTwohandleClick}
+				sectionOneScroll={sectionOneScroll}
+			/>
+
 			<DirectionCardWrapper
 				togglePopup={togglePopup}
 				directionCardData={directionCardData}
+				sectionTwoScroll={sectionTwoScroll}
 			/>
+
 			{showContactPopup && <PopupContactCard />}
 			{!showRecommended && showQuestionsPopup && (
 				<QuestionForm
@@ -140,9 +163,8 @@ const Home = () => {
 			<Footer />
 
 			{/* <TherapistInfo therapistData={therapistData} /> */}
-
 		</div>
 	);
 };
 
-export default Home;
+export default App;
