@@ -1,11 +1,12 @@
 import "./App.css";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import therapistData from "./psykoterapigruopen.se/therapists.json";
 import Navbar from "./psykoterapigruopen.se/components/NavBar/NavBar";
 import Hero from "./psykoterapigruopen.se/components/HeroSection/Hero";
 import CardList from "./psykoterapigruopen.se/components/CardSection/CardList";
 import Filter from "./psykoterapigruopen.se/components/Filter/Filter";
 import TherapistInfo from "./psykoterapigruopen.se/components/CardSection/TherapistInfo";
+import Login from "./psykoterapigruopen.se/components/Login/Login";
 import DirectionCardWrapper from "./psykoterapigruopen.se/components/Filter/DirectionCardWrapper";
 import directionImgOne from "./psykoterapigruopen.se/assets/orion-filtersystem.svg";
 import directionImgTwo from "./psykoterapigruopen.se/assets/orion-fa-personlig-hjalp.svg";
@@ -27,6 +28,17 @@ const App = () => {
 	const [languageFilter, setLanguageFilter] = useState("");
 
 	const [questionValue, setQuestionValue] = useState("");
+
+	const sectionOneScroll = useRef(null);
+	const sectionTwoScroll = useRef(null);
+
+	const sectionOneHandleClick = () => {
+		sectionOneScroll.current.scrollIntoView({ behavior: "smooth" });
+	};
+
+	const sectionTwohandleClick = () => {
+		sectionTwoScroll.current.scrollIntoView({ behavior: "smooth" });
+	};
 
 	const handleStateChange = (newValue) => {
 		setQuestionValue(newValue);
@@ -108,11 +120,19 @@ const App = () => {
 	return (
 		<div className="App">
 			<Navbar />
-			<Hero />
+			<Login />
+			<Hero
+				sectionOneHandleClick={sectionOneHandleClick}
+				sectionTwohandleClick={sectionTwohandleClick}
+				sectionOneScroll={sectionOneScroll}
+			/>
+
 			<DirectionCardWrapper
 				togglePopup={togglePopup}
 				directionCardData={directionCardData}
+				sectionTwoScroll={sectionTwoScroll}
 			/>
+
 			{showContactPopup && <PopupContactCard />}
 			{!showRecommended && showQuestionsPopup && (
 				<QuestionForm
