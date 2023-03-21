@@ -1,20 +1,18 @@
-
 import LoginInfoStepThreeCss from "./loginInfoStepThree.module.css";
-
 
 const loginInfoStepThree = () => {
 	return (
-		<div className={loginInfoStepThreeCss.container}>
-			<h2 className={loginInfoStepThreeCss.title}>Titel och information</h2>
-			<div className={loginInfoStepThreeCss.subtitleWrapper}>
+		<div className={LoginInfoStepThreeCss.container}>
+			<h2 className={LoginInfoStepThreeCss.title}>Titel och information</h2>
+			<div className={LoginInfoStepThreeCss.subtitleWrapper}>
 				<h3>Jag är</h3>
 			</div>
-			<div className={loginInfoStepThreeCss.choicesContainer}>
-				<div className={loginInfoStepThreeCss.choice}>
+			<div className={LoginInfoStepThreeCss.choicesContainer}>
+				<div className={LoginInfoStepThreeCss.choice}>
 					<input type="checkbox" />
 					<p>Leg. Psykoterapeut</p>
 				</div>
-				<div className={loginInfoStepThreeCss.choice}>
+				<div className={LoginInfoStepThreeCss.choice}>
 					<input type="checkbox" />
 					<p>Leg. Psykolog</p>
 				</div>
@@ -25,23 +23,22 @@ const loginInfoStepThree = () => {
 				<input
 					type="textarea"
 					className={LoginInfoStepThreeCss.textArea}
-
 					placeholder="Beskriv dig själv kortfattat, för att ge en personlig bild/beskrivning av dig som människa.
 (Max 400 tecken, inkl blanksteg) 
 "
 				/>
 				<div>
-					<div className={loginInfoStepThreeCss.questionSelection}>
+					<div className={LoginInfoStepThreeCss.questionsSelection}>
 						<div>
 							<div
-								className={`${loginInfoStepThreeCss.btnPoint} ${loginInfoStepThreeCss.selected}`}
+								className={`${LoginInfoStepThreeCss.btnPoint} ${LoginInfoStepThreeCss.selected}`}
 							></div>
-							<div className={loginInfoStepThreeCss.btnPoint}></div>
-							<div className={loginInfoStepThreeCss.btnPoint}></div>
-							<div className={loginInfoStepThreeCss.btnPoint}></div>
-							<div className={loginInfoStepThreeCss.btnPoint}></div>
+							<div className={LoginInfoStepThreeCss.btnPoint}></div>
+							<div className={LoginInfoStepThreeCss.btnPoint}></div>
+							<div className={LoginInfoStepThreeCss.btnPoint}></div>
+							<div className={LoginInfoStepThreeCss.btnPoint}></div>
 						</div>
-						<button className={loginInfoStepThreeCss.btnNextQuestion}>
+						<button className={LoginInfoStepThreeCss.btnNextQuestion}>
 							Nästa fråga
 						</button>
 					</div>
