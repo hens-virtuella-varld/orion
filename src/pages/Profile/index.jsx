@@ -1,10 +1,11 @@
 import React from "react";
 import Footer from "../../psykoterapigruopen.se/components/Footer/Footer";
+import Navbar from "../../psykoterapigruopen.se/components/NavBar/NavBar";
 import "./profile.css";
 const Profile = () => {
 	return (
 		<>
-		
+			<Navbar />
 			<div className="profile">
 				<div className="sidebar">
 					<img
@@ -25,13 +26,13 @@ const Profile = () => {
 						<span>Tillgänglig för videosamtal</span>
 					</div>
 					<p>
-						<b>price: </b>1500kr
+						<b>Pris: </b>1500 kr/h
 					</p>
-					<button>contact me</button>
+					<button>Kontakta mig</button>
 				</div>
 				<div className="profile-content">
 					<div>
-						<h3>HISSPITCH/SAMMANFATTNING AV DIG SOM EN PSYKOTERAPEUT</h3>
+						<h3>SAMMANFATTNING AV DIG SOM EN PSYKOTERAPEUT</h3>
 						<p>
 							Har du kämpat med känslor av ångest, depression eller andra
 							utmaningar inom mental hälsa? Som licensierad psykoterapeut är jag

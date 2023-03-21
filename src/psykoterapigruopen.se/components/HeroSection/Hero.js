@@ -21,11 +21,13 @@ const Hero = ({
 						/>
 						<div className={heroCSS.topHeroText}>
 							<p>
-								Hitta rätt terapeut för dina behov med Psykoterapigruppen Orion.
-								Ange din plats och önskad terapityp för att hitta kvalificerade
-								proffs i ditt område. Med vår omfattande katalog och
-								användarrecensioner kan du fatta ett informerat beslut. Ta
-								första steget mot läkning och starta din sökning idag.
+								Här hittar du en psykoterapeut som passar just dig och dina
+								behov.   Du kan själv filtrera i de olika filtren för att göra
+								det lättare. Om du känner dig osäker eller har svårt att välja
+								kan du kontakta oss för en kostnadsfri konsultation, så att vi
+								genom en kortare intervju på ca 10 minuter kan hjälpa dig att
+								välja ut ett par psykoterapeuter som kan passa just dig och det
+								du vill arbeta med.
 							</p>
 						</div>
 					</div>
