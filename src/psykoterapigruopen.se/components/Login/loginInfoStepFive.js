@@ -5,9 +5,9 @@ const loginInfoStepFive = () => {
 			<h2>Terapiinriktning</h2>
 			<div>
 				<ul>
-					{blabla.map((bla) => (
+					{/* {blabla.map((bla) => (
 						<li>{bla}</li>
-					))}
+					))} */}
 				</ul>
 			</div>
 		</div>

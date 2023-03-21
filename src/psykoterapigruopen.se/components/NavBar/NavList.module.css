@@ -15,3 +15,21 @@
 .navListContainer li img {
 	margin: 0.5rem;
 }
+
+.container {
+	display: flex;
+	align-items: center;
+}
+
+.signUpButton {
+	position: absolute;
+	right: 3rem;
+	border: none;
+	background-color: #c3e0df;
+	font-weight: 400;
+	font-size: 20px;
+}
+
+.signUpButton:hover {
+	color: grey;
+}

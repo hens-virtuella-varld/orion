@@ -5,9 +5,9 @@ const loginInfoStepFour = () => {
 			<h2>Tematiska Områden</h2>
 			<div>
 				<ul>
-					{blabla.map((bla) => (
+					{/* {blabla.map((bla) => (
 						<li>{bla}</li>
-					))}
+					))} */}
 				</ul>
 			</div>
 		</div>

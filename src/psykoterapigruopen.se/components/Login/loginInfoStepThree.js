@@ -1,3 +1,5 @@
+import LoginInfoStepThreeCss from "./loginInfoStepThree.module.css";
+
 const loginInfoStepThree = () => {
 	return (
 		<div>
@@ -10,9 +12,10 @@ const loginInfoStepThree = () => {
 				<p>Leg. Psykolog</p>
 			</div>
 			<div>
-				<h3></h3>
+				<h3>Om mig</h3>
 				<input
 					type="textarea"
+					className={LoginInfoStepThreeCss.textArea}
 					placeholder="Beskriv dig själv kortfattat, för att ge en personlig bild/beskrivning av dig som människa.
 (Max 400 tecken, inkl blanksteg) 
 "

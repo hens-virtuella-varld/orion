@@ -1,6 +1,7 @@
 import { useState } from "react";
 import SignUpImg from "../../assets/sign-up-orion.png";
 import LoginCss from "./Login.module.css";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
 	const [selectedButton, setSelectedButton] = useState(true);
@@ -10,6 +11,11 @@ const Login = () => {
 	};
 	const handleClickLogin = () => {
 		setSelectedButton(false);
+	};
+
+	const navigate = useNavigate();
+	const handleClick = () => {
+		navigate("/signupform");
 	};
 
 	return (
@@ -22,14 +28,21 @@ const Login = () => {
 						<div
 							onClick={handleClickRegister}
 							className={`${LoginCss.btn} ${
-								selectedButton && LoginCss.btnSelected}
+								selectedButton && LoginCss.btnSelected
+							}
 							}`}
 						>
 							Registrera dig
 						</div>
-						<div onClick={handleClickLogin} className={`${LoginCss.btn} ${
-								!selectedButton && LoginCss.btnSelected}
-							}`}>Logga in</div>
+						<div
+							onClick={handleClickLogin}
+							className={`${LoginCss.btn} ${
+								!selectedButton && LoginCss.btnSelected
+							}
+							}`}
+						>
+							Logga in
+						</div>
 					</div>
 				</div>
 				<form action="">
@@ -60,7 +73,9 @@ const Login = () => {
 						<div className={LoginCss.forgetPassword}>Glömt lösenord</div>
 					</div>
 					<div className={LoginCss.LoginBtnContainer}>
-						<button className={LoginCss.loginBtn}>Logga in</button>
+						<button className={LoginCss.loginBtn} onClick={handleClick}>
+							Skapa konto
+						</button>
 						<button
 							className={`${LoginCss.loginBtn} ${LoginCss.loginBtnGoogle}`}
 						>
