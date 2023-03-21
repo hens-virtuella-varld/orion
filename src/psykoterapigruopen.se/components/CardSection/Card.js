@@ -15,17 +15,18 @@ const Card = ({ therapist }) => {
 				</div>
 				<div className={CardCss.cardColTwo}>
 					<div className={CardCss.title}>{therapist.title}</div>
-					<div className={CardCss.method}>{therapist.method}</div>
-				</div>
-				<div className={CardCss.cardColThree}>
-					<div>{therapist.language}</div>
 					<div>{therapist.price}kr</div>
 				</div>
+
 				<ul className={CardCss.listContainer}>
 					{therapist.category.map((categoryItem) => (
 						<li className={CardCss.listItem}>{categoryItem}</li>
 					))}
 				</ul>
+				<div>
+					<p>{therapist.info}</p>
+				</div>
+				<div>Visa profil</div>
 			</div>
 		</div>
 	);

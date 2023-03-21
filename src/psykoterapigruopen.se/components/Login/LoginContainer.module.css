@@ -1,0 +1,34 @@
+.progressContainer {
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.prgressBtn {
+	border-radius: 5px;
+	border: none;
+	padding: 0.1rem 3rem;
+	margin: 1rem;
+}
+
+.btnPrevPage {
+	background-color: #f9d2e6;
+}
+
+.btnNextPage {
+	background-color: #3f6a6a;
+	color: white;
+}
+
+.stepCounterContainer {
+	display: flex;
+}
+
+.stepCounterContainer div {
+	width: 77px;
+	height: 6px;
+	background-color: #3f6a6a;
+	margin: 1rem;
+	border-radius: 6px;
+}
