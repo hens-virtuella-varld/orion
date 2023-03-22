@@ -31,8 +31,6 @@ const loginInfoStepSix = () => {
 					<div
 						className={`${LoginInfoStepSixCss.column} ${LoginInfoStepSixCss.rightColumn}`}
 					>
-						{/* <div> */}
-						{/* The box model gets messy if all the checkItems are active, so I deactivated the one below.  */}
 						<div className={`${LoginInfoStepSixCss.checkItem}`}>
 							<input type="checkbox" />
 							<p>
