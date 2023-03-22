@@ -10,7 +10,6 @@ const logininfoStepTwo = () => {
 				<label for="files">
 					Drag din bild hit eller <span>Sök i datorn</span>
 				</label>
-				<input type="file" />
 				<p>Bilden skall vara i porträtt format med neutral bakgrund.</p>
 			</div>
 			<button className={loginInfoStepTwoCss.BtnUpload}>

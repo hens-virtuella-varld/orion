@@ -27,12 +27,10 @@ const LoginContainer = () => {
 
 	switch (currentSignUpStep) {
 		case 0:
-			currentStepComponent = <LoginDone />;
-			// currentStepComponent = <LoginInfoStepOne />;
+			currentStepComponent = <LoginInfoStepOne />;
 			break;
 		case 1:
-			currentStepComponent = <LoginInfoStepOne />;
-			// currentStepComponent = <LoginInfoStepTwo />;
+			currentStepComponent = <LoginInfoStepTwo />;
 			break;
 		case 2:
 			currentStepComponent = <LoginInfoStepThree />;

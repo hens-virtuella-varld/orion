@@ -1,6 +1,8 @@
+import LoginInfoStepFive from "./loginInfoStepFive.module.css";
+
 const loginInfoStepFive = () => {
 	return (
-		<div>
+		<div className={LoginInfoStepFive.container}>
 			<h3>Välj de nyckelord som matchar dig och din behandling du erbjuder</h3>
 			<h2>Terapiinriktning</h2>
 			<div>

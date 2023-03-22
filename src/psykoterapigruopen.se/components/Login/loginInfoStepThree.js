@@ -17,8 +17,7 @@ const loginInfoStepThree = () => {
 					<p>Leg. Psykolog</p>
 				</div>
 			</div>
-
-			<div>
+			<div className={LoginInfoStepThreeCss.introInput}>
 				<h3>Om mig</h3>
 				<input
 					type="textarea"

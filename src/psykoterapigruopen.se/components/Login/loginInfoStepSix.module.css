@@ -1,8 +1,9 @@
 .container {
-	margin-top: 3rem;
-	width: 60vw;
+	height: 60vh;
+	margin-top: 2rem;
+	width: 65vw;
 	margin-left: 20vw;
-	margin-right: 20vw;
+	margin-right: 15vw;
 	color: #3a3a3a;
 	display: flex;
 	flex-direction: column;
