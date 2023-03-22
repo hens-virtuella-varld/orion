@@ -15,7 +15,7 @@ const LoginContainer = () => {
 	const [currentSignUpStep, setCurrentSignUpStep] = useState(0);
 
 	const handlNextClick = () => {
-		if (currentSignUpStep === 5) {
+		if (currentSignUpStep === 6) {
 			navigate("/");
 		} else {
 			setCurrentSignUpStep(currentSignUpStep + 1);
@@ -52,6 +52,9 @@ const LoginContainer = () => {
 		case 6:
 			currentStepComponent = <LoginDone />;
 			break;
+		default:
+			currentStepComponent = <LoginInfoStepOne />;
+			break;
 	}
 
 	const counter = [];
@@ -71,6 +74,8 @@ const LoginContainer = () => {
 		);
 	}
 
+	const showStepCounter = currentSignUpStep < 6;
+
 	const navigate = useNavigate();
 
 	return (
@@ -89,10 +94,12 @@ const LoginContainer = () => {
 						className={`${LoginContainerCss.prgressBtn} ${LoginContainerCss.btnNextPage}`}
 						onClick={handlNextClick}
 					>
-						Nästa
+						{showStepCounter ? "Nästa" : "Klar"}
 					</button>
 				</div>
-				<div className={LoginContainerCss.stepCounterContainer}>{counter}</div>
+				<div className={LoginContainerCss.stepCounterContainer}>
+					{showStepCounter && counter}
+				</div>
 			</div>
 		</div>
 	);

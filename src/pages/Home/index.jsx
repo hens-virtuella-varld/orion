@@ -118,6 +118,7 @@ const App = () => {
 	return (
 		<div className="App">
 			<Navbar />
+
 			<Hero
 				sectionOneHandleClick={sectionOneHandleClick}
 				sectionTwohandleClick={sectionTwohandleClick}

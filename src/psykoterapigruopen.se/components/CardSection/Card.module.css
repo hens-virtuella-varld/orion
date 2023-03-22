@@ -3,6 +3,7 @@
 	margin-top: 3rem;
 	border-radius: 8px;
 	background-color: white;
+	max-width: 280px;
 }
 
 .innerContainer {

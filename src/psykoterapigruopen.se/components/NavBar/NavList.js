@@ -6,6 +6,10 @@ const NavList = () => {
 	const handleClick = () => {
 		navigate("/signup");
 	};
+
+	const handleHome = () => {
+		navigate("/");
+	};
 	return (
 		<div className={NavListCss.container}>
 			<ul className={NavListCss.navListContainer}>
@@ -15,7 +19,7 @@ const NavList = () => {
 				<li>
 					Utbildning <img src={arrowImage} alt="arrow icon" />
 				</li>
-				<li>
+				<li onClick={handleHome}>
 					Psykoterapi <img src={arrowImage} alt="arrow icon" />
 				</li>
 				<li>

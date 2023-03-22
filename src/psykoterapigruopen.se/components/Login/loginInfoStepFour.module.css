@@ -60,6 +60,11 @@
 	border-radius: 16px;
 }
 
+.areasList li:hover {
+	background-color: #c6dddd;
+	cursor: pointer;
+}
+
 .selected {
 	color: #3f6a6a;
 }

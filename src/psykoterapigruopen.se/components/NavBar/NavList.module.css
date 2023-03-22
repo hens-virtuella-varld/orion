@@ -11,6 +11,10 @@
 	align-items: center;
 	justify-content: center;
 }
+.navListContainer li:hover {
+	color: rgb(66, 66, 66);
+	cursor: pointer;
+}
 
 .navListContainer li img {
 	margin: 0.5rem;
@@ -31,5 +35,5 @@
 }
 
 .signUpButton:hover {
-	color: grey;
+	color: rgb(66, 66, 66);
 }
