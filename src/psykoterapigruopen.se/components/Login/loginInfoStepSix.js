@@ -19,7 +19,7 @@ const loginInfoStepSix = () => {
 						<div className={LoginInfoStepSixCss.question}>
 							<h4>
 								Erbjuder du rabatterat pris för studenter, arbetslösa och
-								pensionärer med 20%?{" "}
+								pensionärer med 20%?
 							</h4>
 							<div className={LoginInfoStepSixCss.btnWrapper}>
 								<button>Ja</button>

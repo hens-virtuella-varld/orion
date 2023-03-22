@@ -14,7 +14,11 @@ const LoginContainer = () => {
 	const [currentSignUpStep, setCurrentSignUpStep] = useState(0);
 
 	const handlNextClick = () => {
-		setCurrentSignUpStep(currentSignUpStep + 1);
+		if (currentSignUpStep === 5) {
+			navigate("/");
+		} else {
+			setCurrentSignUpStep(currentSignUpStep + 1);
+		}
 	};
 
 	const handlPrevClick = () => {
@@ -65,6 +69,8 @@ const LoginContainer = () => {
 			></div>
 		);
 	}
+
+	const navigate = useNavigate();
 
 	return (
 		<div>

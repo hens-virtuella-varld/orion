@@ -24,20 +24,6 @@ const PopupContactCard = () => {
 					<textarea name="" id="" cols="30" rows="10"></textarea>
 				</div>
 				<div className={PopupContactCardCss.colFour}>
-					<div className={PopupContactCardCss.checkboxContainer}>
-						<div>
-							<input type="checkbox" />
-							Jag instämmer att den information jag har angivit stämmer.
-						</div>
-						<div>
-							<input type="checkbox" />
-							Jag godkänner att Psykoterapigruppen Orion kontaktar mig.
-						</div>
-						<div>
-							<input type="checkbox" />
-							Jag samtycker till villkoren på Psykoterapigruppen Orions hemsida.
-						</div>
-					</div>
 					<div>
 						<button>Skicka</button>
 					</div>

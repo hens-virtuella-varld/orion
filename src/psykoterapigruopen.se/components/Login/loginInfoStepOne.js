@@ -14,7 +14,7 @@ const loginInfoStepOne = () => {
 					<input type="text" placeholder="Fyll i ditt förnamn" />
 				</div>
 				<div className={loginInfoStepOneCss.question}>
-					<label>Välj vilka språk du erbjuder</label>
+					<label>Ange de språk du kan arbeta på</label>
 					<select name="" id=""></select>
 					<option value="Språk">Språk</option>
 				</div>
@@ -25,8 +25,8 @@ const loginInfoStepOne = () => {
 				<div className={loginInfoStepOneCss.question}>
 					<h3>Hur erbjuder du att träffa patienter?</h3>
 					<div className={loginInfoStepOneCss.btns}>
-						<button>Bara på kontor</button>
-						<button>Bara videosamtal</button>
+						<button>På mottagning</button>
+						<button>Videosamtal</button>
 						<button>Båda</button>
 					</div>
 				</div>

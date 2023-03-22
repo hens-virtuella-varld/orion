@@ -36,6 +36,11 @@
 	margin-left: 0.5rem;
 }
 
+
+.introInput {
+	margin-top: 2rem;
+}
+
 .textArea {
 	border-radius: 10px;
 	padding: 2px;

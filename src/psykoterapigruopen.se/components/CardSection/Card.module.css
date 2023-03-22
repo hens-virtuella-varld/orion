@@ -46,6 +46,7 @@
 }
 
 .listContainer {
+	margin-top: 1rem;
 	width: 225px;
 	display: flex;
 	flex-wrap: wrap;
@@ -55,7 +56,23 @@
 .listItem {
 	font-size: 14px;
 	background-color: #a5d0d0;
-	color: 3A3A3A;
+	color: #3a3a3a;
 	padding: 0.25rem 1rem;
 	border-radius: 1rem;
+}
+.containerTherapistInfo {
+	height: 3rem;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	margin: 1rem 0;
+}
+
+.showProfile {
+	display: flex;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.showProfile:hover {
+	text-decoration: underline;
 }
