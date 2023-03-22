@@ -59,3 +59,7 @@
 	padding: 0 1rem;
 	border-radius: 16px;
 }
+
+.selected {
+	color: #3f6a6a;
+}
