@@ -2,8 +2,9 @@ import LoginInfoStepOne from "./loginInfoStepOne";
 import LoginInfoStepTwo from "./loginInfoStepTwo";
 import LoginInfoStepThree from "./loginInfoStepThree";
 import LoginInfoStepFour from "./loginInfoStepFour";
-
 import LoginInfoStepFive from "./loginInfoStepFive";
+import LoginInfoStepSix from "./loginInfoStepSix";
+import LoginDone from "./loginDone";
 
 import LoginContainerCss from "./LoginContainer.module.css";
 
@@ -26,10 +27,12 @@ const LoginContainer = () => {
 
 	switch (currentSignUpStep) {
 		case 0:
-			currentStepComponent = <LoginInfoStepOne />;
+			currentStepComponent = <LoginInfoStepSix />;
+			// currentStepComponent = <LoginInfoStepOne />;
 			break;
 		case 1:
-			currentStepComponent = <LoginInfoStepTwo />;
+			currentStepComponent = <LoginInfoStepOne />;
+			// currentStepComponent = <LoginInfoStepTwo />;
 			break;
 		case 2:
 			currentStepComponent = <LoginInfoStepThree />;
@@ -40,11 +43,17 @@ const LoginContainer = () => {
 		case 4:
 			currentStepComponent = <LoginInfoStepFive />;
 			break;
+		// case 5:
+		// 	currentStepComponent = <LoginInfoStepSix />;
+		// 	break;
+		case 6:
+			currentStepComponent = <LoginDone />;
+			break;
 	}
 
 	const counter = [];
 
-	for (let i = 0; i < 5; i++) {
+	for (let i = 0; i < 6; i++) {
 		const isCurrent = currentSignUpStep === i;
 		const currentStyle = {
 			backgroundColor: isCurrent ? "#69B1B0" : "#D9D9D9",
@@ -61,7 +70,6 @@ const LoginContainer = () => {
 
 	return (
 		<div>
-
 			{currentStepComponent}
 
 			<div className={LoginContainerCss.progressContainer}>
