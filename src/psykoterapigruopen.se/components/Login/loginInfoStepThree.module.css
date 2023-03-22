@@ -1,10 +1,11 @@
 .container {
+	height: 60vh;
+	margin-top: 2rem;
 	width: 100vw;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 	color: #3a3a3a;
-	margin-top: 3rem;
 }
 
 .title {
@@ -35,15 +36,16 @@
 	margin-left: 0.5rem;
 }
 
+
 .introInput {
 	margin-top: 2rem;
 }
 
 .textArea {
 	border-radius: 10px;
-	padding: 10px;
+	padding: 2px;
 	width: 50vw;
-	height: 40vh;
+	height: 20vh;
 	margin-top: 0.5rem;
 	margin-bottom: 0.5rem;
 }

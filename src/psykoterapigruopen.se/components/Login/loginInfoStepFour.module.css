@@ -1,14 +1,16 @@
 .container {
+	height: 60vh;
+	margin-top: 2rem;
+	width: 100vw;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 	color: #3a3a3a;
-	margin-top: 3rem;
 }
 
 .title {
 	font-weight: 600;
-	font-size: 36px;
+	font-size: 32px;
 }
 
 .subtitle {

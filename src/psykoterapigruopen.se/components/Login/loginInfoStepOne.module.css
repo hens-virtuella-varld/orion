@@ -1,4 +1,6 @@
 .container {
+	height: 60vh;
+	margin-top: 2rem;
 	width: 100vw;
 	display: flex;
 	align-items: center;
@@ -6,8 +8,9 @@
 }
 
 .questionsContainer {
-	margin-left: 20vw;
-	width: 80vw;
+	margin-left: 15vw;
+	margin-right: 15vw;
+	width: 70vw;
 	height: 300px;
 	display: flex;
 	align-items: center;
