@@ -31,39 +31,39 @@ const loginInfoStepSix = () => {
 					<div
 						className={`${LoginInfoStepSixCss.column} ${LoginInfoStepSixCss.rightColumn}`}
 					>
-						<div>
-							{/* The box model gets messy if all the checkItems are active, so I deactivated the one below.  */}
-						{/* <div className={`${LoginInfoStepSixCss.checkItem}`}> */}
+						{/* <div> */}
+						{/* The box model gets messy if all the checkItems are active, so I deactivated the one below.  */}
+						<div className={`${LoginInfoStepSixCss.checkItem}`}>
 							<input type="checkbox" />
 							<p>
 								Jag intygar att jag är godkänd och legitimerad psykoterapeut och
 								jag kan uppvisa ett intyg/diplom på anmaning.
 							</p>
-							<div className={`${LoginInfoStepSixCss.checkItem}`}>
-								<input type="checkbox" />
-								<p>
-									Jag är medveten om att jag som legitimerad psykoterapeut är
-									skyldig att vara ansluten till vårdgivarregistret, för att få
-									bedriva psykoterapi.
-								</p>
-							</div>
-							<div className={`${LoginInfoStepSixCss.checkItem}`}>
-								<input type="checkbox" />
-								<p>
-									Jag godkänner att Psykoterapigruppen Orion äger rätten att
-									redigera och ta bort min presentation från sidan.
-								</p>
-							</div>
-							<div className={`${LoginInfoStepSixCss.checkItem}`}>
-								<input type="checkbox" />
-								<p>
-									I enlighet med GDPR godkänner även du att Psykoterapigruppen
-									Orion behandlar dina personuppgifter i syfte att kunna visa
-									dig på vår hemsida och andra kanaler, utbetala lön/fakturor
-									samt för att kunna bedriva dokumentation utifrån de rättsliga
-									förpliktelser som åligger verksamheten.
-								</p>
-							</div>
+						</div>
+						<div className={`${LoginInfoStepSixCss.checkItem}`}>
+							<input type="checkbox" />
+							<p>
+								Jag är medveten om att jag som legitimerad psykoterapeut är
+								skyldig att vara ansluten till vårdgivarregistret, för att få
+								bedriva psykoterapi.
+							</p>
+						</div>
+						<div className={`${LoginInfoStepSixCss.checkItem}`}>
+							<input type="checkbox" />
+							<p>
+								Jag godkänner att Psykoterapigruppen Orion äger rätten att
+								redigera och ta bort min presentation från sidan.
+							</p>
+						</div>
+						<div className={`${LoginInfoStepSixCss.checkItem}`}>
+							<input type="checkbox" />
+							<p>
+								I enlighet med GDPR godkänner även du att Psykoterapigruppen
+								Orion behandlar dina personuppgifter i syfte att kunna visa dig
+								på vår hemsida och andra kanaler, utbetala lön/fakturor samt för
+								att kunna bedriva dokumentation utifrån de rättsliga
+								förpliktelser som åligger verksamheten.
+							</p>
 						</div>
 					</div>
 				</div>
