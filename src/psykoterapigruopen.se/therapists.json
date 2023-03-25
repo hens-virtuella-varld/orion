@@ -7,10 +7,12 @@
 		"method": "Video samtal",
 		"category": ["Depression", "ADHD", "Kropp och hälsa", "Fobier"],
 		"language": ["Swedish"],
-		"img": "../therapistImages/orion-example-image.png",
+		"img": "../therapistImages/orion-placeholder-img.svg",
 		"mobile": "+46 733 78 90 05",
 		"email": "leila.hej@gmail.com",
 		"price": "1500",
+		"tematiska": ["Sömnproblem", "Unga vuxna", "Ungdomar", "Utsatthet", "Ångest", "Stress och uttmattning", "Tvångstankar", "Trauma", "Ätstörningar", "Övergrepp"],
+		"terapiområde": ["Sexologi", " EFT (Emotionell fokuserad terapi)"],
 		"info": "Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn."
 	},
 	{
@@ -21,10 +23,12 @@
 		"method": "Video samtal",
 		"category": ["Depression", "ADHD", "Fobier", "Sorg och saknad"],
 		"language": ["English"],
-		"img": "../therapistImages/adhd.png",
+		"img": "../therapistImages/orion-placeholder-img.svg",
 		"mobile": "+46 733 78 90 05",
 		"email": "leila.hej@gmail.com",
 		"price": "1500",
+		"tematiska": ["Sömnproblem", "Unga vuxna", "Ungdomar", "Utsatthet", "Ångest", "Stress och uttmattning", "Tvångstankar", "Trauma", "Ätstörningar", "Övergrepp"],
+		"terapiområde": ["Sexologi", " EFT (Emotionell fokuserad terapi)"],
 		"info": "Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn."
 	},
 	{
@@ -36,10 +40,12 @@
 		"category": ["Depression", "ADHD", "Karriär och yrkeslivtt"],
 		"meeting": "Video samtal",
 		"language": ["Danish"],
-		"img": "../therapistImages/adhd.png",
+		"img": "../therapistImages/orion-placeholder-img.svg",
 		"mobile": "+46 733 78 90 05",
 		"email": "leila.hej@gmail.com",
 		"price": "1500",
+		"tematiska": ["Sömnproblem", "Unga vuxna", "Ungdomar", "Utsatthet", "Ångest", "Stress och uttmattning", "Tvångstankar", "Trauma", "Ätstörningar", "Övergrepp"],
+		"terapiområde": ["Sexologi", " EFT (Emotionell fokuserad terapi)"],
 		"info": "Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn."
 	},
 	{
@@ -51,10 +57,12 @@
 		"category": ["Depression", "ADHD", "Trauma", "PTSD"],
 		"meeting": "Video samtal",
 		"language": ["French"],
-		"img": "../therapistImages/adhd.png",
+		"img": "../therapistImages/orion-placeholder-img.svg",
 		"mobile": "+46 733 78 90 05",
 		"email": "leila.hej@gmail.com",
 		"price": "1500",
+		"tematiska": ["Sömnproblem", "Unga vuxna", "Ungdomar", "Utsatthet", "Ångest", "Stress och uttmattning", "Tvångstankar", "Trauma", "Ätstörningar", "Övergrepp"],
+		"terapiområde": ["Sexologi", " EFT (Emotionell fokuserad terapi)"],
 		"info": "Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn."
 	},
 	{
@@ -66,10 +74,12 @@
 		"category": ["Anxiety", "Couples", "Stress och uttmattning"],
 		"meeting": "Video samtal",
 		"language": ["Swedish"],
-		"img": "../therapistImages/adhd.png",
+		"img": "../therapistImages/orion-placeholder-img.svg",
 		"mobile": "+46 733 78 90 05",
 		"email": "leila.hej@gmail.com",
 		"price": "1500",
+		"tematiska": ["Sömnproblem", "Unga vuxna", "Ungdomar", "Utsatthet", "Ångest", "Stress och uttmattning", "Tvångstankar", "Trauma", "Ätstörningar", "Övergrepp"],
+		"terapiområde": ["Sexologi", " EFT (Emotionell fokuserad terapi)"],
 		"info": "Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn."
 	},
 	{
@@ -85,6 +95,8 @@
 		"mobile": "+46 733 78 90 05",
 		"email": "leila.hej@gmail.com",
 		"price": "1500",
+		"tematiska": ["ADD", "ADHD", "Aggressivitet", "Barn 1-10", "Föraldraskap", "Barn 10-18", "Livskris", "Panikångest", "Gränssättningt", "HBTQ+", "Karriär och yrkeslivtt", "Oro", "Beroendeproblematik", "Utsatthet", "Ångest", "Stress och uttmattning", "Tvångstankar", "Trauma", "Ätstörningar", "Övergrepp"],
+		"terapiområde": ["Familjterapi", "KBT (Kognitiv beteendeterapi)", "KPT (Kognitiv psykoterapi)", "Psykodynamisk psykkoterapi", "Psykoanalys", "Systemisk terapi", "ACT (Acceptance Commitment Therapy)", "Dansterapi"],
 		"info": "Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn."
 	},
 	{
@@ -100,6 +112,8 @@
 		"mobile": "+46 733 78 90 05",
 		"email": "leila.hej@gmail.com",
 		"price": "1500",
+		"tematiska": ["Sömnproblem", "Unga vuxna", "Ungdomar", "Utsatthet", "Ångest", "Stress och uttmattning", "Tvångstankar", "Trauma", "Ätstörningar", "Övergrepp"],
+		"terapiområde": ["Lekterapi", "Relationsterapi", "Lösningsfokuserad korttidsterapi", "Mindfulness", "NLP (Neuro lingvistisk programmering)", "Psykosyntes"],
 		"info": "Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn."
 	},
 	{
@@ -115,6 +129,8 @@
 		"mobile": "+46 733 78 90 05",
 		"email": "leila.hej@gmail.com",
 		"price": "1500",
+		"tematiska": ["Relationsproblem", "PTSD", "Sorg och saknad", "Trots", "Sömnproblem", "Unga vuxna", "Ungdomar", "Utsatthet", "Ångest", "Stress och uttmattning", "Tvångstankar", "Trauma", "Ätstörningar", "Övergrepp"],
+		"terapiområde": ["Familjterapi", "KBT (Kognitiv beteendeterapi)", "KPT (Kognitiv psykoterapi)", "Psykodynamisk psykkoterapi", "Psykoanalys", "Systemisk terapi", "ACT (Acceptance Commitment Therapy)", "Dansterapi",  " EFT (Emotionell fokuserad terapi)", "Existentiell psykoterapi", "Gestaltterapi", "Humanistisk terapi", "Hypnosterapi", "Inlärningsterapi", "Konstterapi"],
 		"info": "Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn."
 	},
 	{
@@ -129,6 +145,8 @@
 		"mobile": "+46 733 78 90 05",
 		"email": "leila.hej@gmail.com",
 		"price": "1500",
+		"tematiska": ["ADD", "ADHD", "Aggressivitet", "Barn 1-10", "Föraldraskap", "Barn 10-18", "Livskris", "Panikångest", "Gränssättningt", "HBTQ+", "Karriär och yrkeslivtt", "Kropp och hälsa", "OCD/ Tvångssyndrom", "Oro", "Beroendeproblematik",  "Ätstörningar", "Övergrepp"],
+		"terapiområde": ["Dansterapi", "Schematerapi", "DBT (Dialektisk beteendeterapi)", "EMDR (Eye Movement  desensitization and reprocessing)", "Sexologi", " EFT (Emotionell fokuserad terapi)", "Existentiell psykoterapi", "Gestaltterapi", "Humanistisk terapi"],
 		"info": "Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn."
 	},
 	{
@@ -143,6 +161,8 @@
 		"mobile": "+46 733 78 90 05",
 		"email": "leila.hej@gmail.com",
 		"price": "1500",
+		"tematiska": ["Tvångstankar", "Trauma", "Ätstörningar", "Övergrepp"],
+		"terapiområde": ["Systemisk terapi", "ACT (Acceptance Commitment Therapy)", "Dansterapi", "Schematerapi", "DBT (Dialektisk beteendeterapi)", "EMDR (Eye Movement  desensitization and reprocessing)", "Sexologi", " EFT (Emotionell fokuserad terapi)"],
 		"info": "Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn."
 	},
 	{
@@ -158,6 +178,8 @@
 		"mobile": "+46 733 78 90 05",
 		"email": "leila.hej@gmail.com",
 		"price": "1500",
+		"tematiska": ["Utsatthet", "Ångest", "Stress och uttmattning", "Tvångstankar", "Trauma", "Ätstörningar", "Övergrepp"],
+		"terapiområde": ["Humanistisk terapi", "Hypnosterapi", "Inlärningsterapi", "Konstterapi", "Kroppsorienterad terapi", "Lekterapi", "Relationsterapi"],
 		"info": "Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn."
 	},
 	{
@@ -173,6 +195,8 @@
 		"mobile": "+46 733 78 90 05",
 		"email": "leila.hej@gmail.com",
 		"price": "1500",
+		"tematiska": ["Barn 1-10", "Föraldraskap", "Barn 10-18", "Livskris", "Panikångest", "Gränssättningt", "HBTQ+", "Karriär och yrkeslivtt", "Kropp och hälsa", "OCD/ Tvångssyndrom", "Oro"],
+		"terapiområde": [" EFT (Emotionell fokuserad terapi)", "Existentiell psykoterapi", "Gestaltterapi", "Humanistisk terapi", "Hypnosterapi", "Inlärningsterapi", "Konstterapi", "Kroppsorienterad terapi", "Lekterapi", "Relationsterapi", "Lösningsfokuserad korttidsterapi", "Mindfulness", "NLP (Neuro lingvistisk programmering)", "Psykosyntes"],
 		"info": "Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn."
 	},
 	{
@@ -188,6 +212,8 @@
 		"mobile": "+46 733 78 90 05",
 		"email": "leila.hej@gmail.com",
 		"price": "1500",
+		"tematiska": ["Sömnproblem", "Unga vuxna", "Ungdomar", "Utsatthet", "Ångest", "Stress och uttmattning", "Tvångstankar", "Trauma", "Ätstörningar", "Övergrepp"],
+		"terapiområde": ["Familjterapi", "KBT (Kognitiv beteendeterapi)", "KPT (Kognitiv psykoterapi)", "Psykodynamisk psykkoterapi", "Psykoanalys", "Systemisk terapi"],
 		"info": "Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn."
 	},
 	{
@@ -203,6 +229,8 @@
 		"mobile": "+46 733 78 90 05",
 		"email": "leila.hej@gmail.com",
 		"price": "1500",
+		"tematiska":["Barn 1-10", "Föraldraskap", "Barn 10-18", "Livskris", "Panikångest", "Gränssättningt", "HBTQ+", "Karriär och yrkeslivtt", "Kropp och hälsa", "OCD/ Tvångssyndrom", "Oro", "Beroendeproblematik", "Fobier", "Familjerelaterade frågor", "Parterapi", "Deppression", "Våldsproblematik", "Socialfobi", "Självförtroende"],
+		"terapiområde": ["Familjterapi", "KBT (Kognitiv beteendeterapi)", "KPT (Kognitiv psykoterapi)", "Psykodynamisk psykkoterapi", "Psykoanalys", "Systemisk terapi", "ACT (Acceptance Commitment Therapy)", "Dansterapi", "Schematerapi", "DBT (Dialektisk beteendeterapi)", "EMDR (Eye Movement  desensitization and reprocessing)", "Sexologi", " EFT (Emotionell fokuserad terapi)", "Existentiell psykoterapi", "Gestaltterapi", "Humanistisk terapi", "Hypnosterapi", "Inlärningsterapi", "Konstterapi", "Kroppsorienterad terapi", "Lekterapi", "Relationsterapi", "Lösningsfokuserad korttidsterapi", "Mindfulness", "NLP (Neuro lingvistisk programmering)", "Psykosyntes"],
 		"info": "Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn."
 	},
 	{
@@ -218,6 +246,8 @@
 		"mobile": "+46 733 78 90 05",
 		"email": "leila.hej@gmail.com",
 		"price": "1500",
+		"tematiska":["Relationsproblem", "PTSD", "Sorg och saknad", "Trots", "Sömnproblem", "Unga vuxna", "Ungdomar", "Utsatthet", "Ångest", "Stress och uttmattning", "Tvångstankar", "Trauma", "Ätstörningar", "Övergrepp"],
+		"terapiområde": ["KPT (Kognitiv psykoterapi)", "Psykodynamisk psykkoterapi", "Psykoanalys", "Systemisk terapi", "ACT (Acceptance Commitment Therapy)", "Dansterapi", "Schematerapi", "Mindfulness", "NLP (Neuro lingvistisk programmering)", "Psykosyntes"],
 		"info": "Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn."
 	},
 	{
@@ -233,6 +263,8 @@
 		"mobile": "+46 733 78 90 05",
 		"email": "leila.hej@gmail.com",
 		"price": "1500",
+		"tematiska":["ADD", "ADHD", "Aggressivitet", "Barn 1-10", "Föraldraskap", "Barn 10-18", "Livskris", "Panikångest", "Gränssättningt", "HBTQ+", "Karriär och yrkeslivtt"],
+		"terapiområde": ["Humanistisk terapi", "Hypnosterapi", "Inlärningsterapi", "Konstterapi", "Kroppsorienterad terapi", "Lekterapi", "Relationsterapi", "Lösningsfokuserad korttidsterapi", "Mindfulness", "NLP (Neuro lingvistisk programmering)", "Psykosyntes"],
 		"info": "Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn."
 	},
 	{
@@ -247,6 +279,8 @@
 		"mobile": "+46 733 78 90 05",
 		"email": "leila.hej@gmail.com",
 		"price": "1500",
+		"tematiska":["Familjerelaterade frågor", "Parterapi", "Deppression", "Våldsproblematik", "Socialfobi", "Självförtroende", "Självkänsla", "Sex och samlevnad"],
+		"terapiområde": ["Familjterapi", "KBT (Kognitiv beteendeterapi)"],
 		"info": "Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn."
 	},
 	{
@@ -261,6 +295,8 @@
 		"mobile": "+46 733 78 90 05",
 		"email": "leila.hej@gmail.com",
 		"price": "1500",
+		"tematiska":[ "Socialfobi", "Självförtroende", "Självkänsla", "Sex och samlevnad", "Relationsproblem", "PTSD", "Sorg och saknad", "Trots", "Sömnproblem", "Unga vuxna"],
+		"terapiområde": [" EFT (Emotionell fokuserad terapi)", "Existentiell psykoterapi", "Gestaltterapi", "Humanistisk terapi", "Hypnosterapi", "Inlärningsterapi", "Konstterapi", "Kroppsorienterad terapi", "Lekterapi", "Relationsterapi", "Lösningsfokuserad korttidsterapi", "Mindfulness", "NLP (Neuro lingvistisk programmering)", "Psykosyntes"],
 		"info": "Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn."
 	},
 	{
@@ -276,6 +312,8 @@
 		"mobile": "+46 733 78 90 05",
 		"email": "leila.hej@gmail.com",
 		"price": "1500",
+		"tematiska":["ADD", "ADHD", "Aggressivitet", "Barn 1-10", "Föraldraskap", "Barn 10-18", "Livskris", "Panikångest", "Gränssättningt", "HBTQ+", "Karriär och yrkeslivtt", "Kropp och hälsa", "OCD/ Tvångssyndrom", "Oro", "Beroendeproblematik", "Fobier", "Familjerelaterade frågor", "Parterapi"],
+		"terapiområde": [" EFT (Emotionell fokuserad terapi)", "Existentiell psykoterapi", "Gestaltterapi", "Humanistisk terapi", "Hypnosterapi"],
 		"info": "Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn."
 	},
 	{
@@ -291,6 +329,8 @@
 		"mobile": "+46 733 78 90 05",
 		"email": "leila.hej@gmail.com",
 		"price": "1500",
+		"tematiska": ["Sömnproblem", "Unga vuxna", "Ungdomar", "Utsatthet", "Ångest", "Stress och uttmattning", "Tvångstankar", "Trauma", "Ätstörningar", "Övergrepp"],
+		"terapiområde": ["Sexologi", " EFT (Emotionell fokuserad terapi)"],
 		"info": "Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn."
 	},
 	{
@@ -306,6 +346,8 @@
 		"mobile": "+46 733 78 90 05",
 		"email": "leila.hej@gmail.com",
 		"price": "1500",
+		"tematiska": ["Sömnproblem", "Unga vuxna", "Ungdomar", "Utsatthet", "Ångest", "Stress och uttmattning", "Tvångstankar", "Trauma", "Ätstörningar", "Övergrepp"],
+		"terapiområde": ["Sexologi", " EFT (Emotionell fokuserad terapi)"],
 		"info": "Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn."
 	},
 	{
@@ -321,6 +363,8 @@
 		"mobile": "+46 733 78 90 05",
 		"email": "leila.hej@gmail.com",
 		"price": "1500",
+		"tematiska": ["Sömnproblem", "Unga vuxna", "Ungdomar", "Utsatthet", "Ångest", "Stress och uttmattning", "Tvångstankar", "Trauma", "Ätstörningar", "Övergrepp"],
+		"terapiområde": ["Sexologi", " EFT (Emotionell fokuserad terapi)"],
 		"info": "Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn."
 	},
 	{
@@ -336,6 +380,8 @@
 		"mobile": "+46 733 78 90 05",
 		"email": "leila.hej@gmail.com",
 		"price": "1500",
+		"tematiska": ["Sömnproblem", "Unga vuxna", "Ungdomar", "Utsatthet", "Ångest", "Stress och uttmattning", "Tvångstankar", "Trauma", "Ätstörningar", "Övergrepp"],
+		"terapiområde": ["Sexologi", " EFT (Emotionell fokuserad terapi)"],
 		"info": "Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn."
 	},
 	{
@@ -351,6 +397,8 @@
 		"mobile": "+46 733 78 90 05",
 		"email": "leila.hej@gmail.com",
 		"price": "1500",
+		"tematiska": ["Sömnproblem", "Unga vuxna", "Ungdomar", "Utsatthet", "Ångest", "Stress och uttmattning", "Tvångstankar", "Trauma", "Ätstörningar", "Övergrepp"],
+		"terapiområde": ["Sexologi", " EFT (Emotionell fokuserad terapi)"],
 		"info": "Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn."
 	},
 	{
@@ -365,6 +413,8 @@
 		"mobile": "+46 733 78 90 05",
 		"email": "leila.hej@gmail.com",
 		"price": "1500",
+		"tematiska": ["Sömnproblem", "Unga vuxna", "Ungdomar", "Utsatthet", "Ångest", "Stress och uttmattning", "Tvångstankar", "Trauma", "Ätstörningar", "Övergrepp"],
+		"terapiområde": ["Sexologi", " EFT (Emotionell fokuserad terapi)"],
 		"info": "Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn."
 	},
 	{
@@ -379,6 +429,8 @@
 		"mobile": "+46 733 78 90 05",
 		"email": "leila.hej@gmail.com",
 		"price": "1500",
+		"tematiska": ["Sömnproblem", "Unga vuxna", "Ungdomar", "Utsatthet", "Ångest", "Stress och uttmattning", "Tvångstankar", "Trauma", "Ätstörningar", "Övergrepp"],
+		"terapiområde": ["Sexologi", " EFT (Emotionell fokuserad terapi)"],
 		"info": "Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn."
 	},
 	{
@@ -394,6 +446,8 @@
 		"mobile": "+46 733 78 90 05",
 		"email": "leila.hej@gmail.com",
 		"price": "1500",
+		"tematiska": ["Sömnproblem", "Unga vuxna", "Ungdomar", "Utsatthet", "Ångest", "Stress och uttmattning", "Tvångstankar", "Trauma", "Ätstörningar", "Övergrepp"],
+		"terapiområde": ["Sexologi", " EFT (Emotionell fokuserad terapi)"],
 		"info": "Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn."
 	},
 	{
@@ -409,6 +463,8 @@
 		"mobile": "+46 733 78 90 05",
 		"email": "leila.hej@gmail.com",
 		"price": "1500",
+		"tematiska": ["Sömnproblem", "Unga vuxna", "Ungdomar", "Utsatthet", "Ångest", "Stress och uttmattning", "Tvångstankar", "Trauma", "Ätstörningar", "Övergrepp"],
+		"terapiområde": ["Sexologi", " EFT (Emotionell fokuserad terapi)"],
 		"info": "Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn."
 	},
 	{
@@ -424,6 +480,8 @@
 		"mobile": "+46 733 78 90 05",
 		"email": "leila.hej@gmail.com",
 		"price": "1500",
+		"tematiska": ["Sömnproblem", "Unga vuxna", "Ungdomar", "Utsatthet", "Ångest", "Stress och uttmattning", "Tvångstankar", "Trauma", "Ätstörningar", "Övergrepp"],
+		"terapiområde": ["Sexologi", " EFT (Emotionell fokuserad terapi)"],
 		"info": "Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn."
 	},
 	{
@@ -439,6 +497,8 @@
 		"mobile": "+46 733 78 90 05",
 		"email": "leila.hej@gmail.com",
 		"price": "1500",
+		"tematiska": ["Sömnproblem", "Unga vuxna", "Ungdomar", "Utsatthet", "Ångest", "Stress och uttmattning", "Tvångstankar", "Trauma", "Ätstörningar", "Övergrepp"],
+		"terapiområde": ["Sexologi", " EFT (Emotionell fokuserad terapi)"],
 		"info": "Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn."
 	},
 	{
@@ -454,6 +514,8 @@
 		"mobile": "+46 733 78 90 05",
 		"email": "leila.hej@gmail.com",
 		"price": "1500",
+		"tematiska": ["Sömnproblem", "Unga vuxna", "Ungdomar", "Utsatthet", "Ångest", "Stress och uttmattning", "Tvångstankar", "Trauma", "Ätstörningar", "Övergrepp"],
+		"terapiområde": ["Sexologi", " EFT (Emotionell fokuserad terapi)"],
 		"info": "Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn."
 	},
 	{
@@ -469,6 +531,8 @@
 		"mobile": "+46 733 78 90 05",
 		"email": "leila.hej@gmail.com",
 		"price": "1500",
+		"tematiska": ["Sömnproblem", "Unga vuxna", "Ungdomar", "Utsatthet", "Ångest", "Stress och uttmattning", "Tvångstankar", "Trauma", "Ätstörningar", "Övergrepp"],
+		"terapiområde": ["Sexologi", " EFT (Emotionell fokuserad terapi)"],
 		"info": "Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn. Jag är en legitermerad psykoterapeut som jobbar med barn (1-10). Jag använder olika terapeutiska områden att stödja barn."
 	}
 ]

@@ -10,6 +10,12 @@ const Filter = ({
 	changeLanguage,
 	categoriesFilter,
 	languageFilter,
+	changeTerapiOmråde,
+	changeTematiska,
+	tematiskaFilterFunc,
+	tematiska,
+	terapiområde,
+	terapiOmrådeFilterFunc,
 }) => {
 	return (
 		<div>
@@ -22,6 +28,12 @@ const Filter = ({
 					changeLanguage={changeLanguage}
 					categoriesFilter={categoriesFilter}
 					languageFilter={languageFilter}
+					changeTerapiOmråde={changeTerapiOmråde}
+					changeTematiska={changeTematiska}
+					tematiskaFilterFunc={tematiskaFilterFunc}
+					tematiska={tematiska}
+					terapiområde={terapiområde}
+					terapiOmrådeFilterFunc={terapiOmrådeFilterFunc}
 				/>
 			</form>
 		</div>
