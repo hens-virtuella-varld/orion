@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
+import Home from "./pages/Home/Home";
 import SignUp from "./pages/SignUp/SignUp";
 import SignUpForm from "./pages/SignUp/SignUpForm";
 import Card from "./psykoterapigruopen.se/components/CardSection/Card";

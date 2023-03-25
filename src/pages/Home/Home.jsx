@@ -7,7 +7,7 @@ import CardList from "../../psykoterapigruopen.se/components/CardSection/CardLis
 import Filter from "../../psykoterapigruopen.se/components/Filter/Filter";
 import DirectionCardWrapper from "../../psykoterapigruopen.se/components/Filter/DirectionCardWrapper";
 import directionImgOne from "../../psykoterapigruopen.se/assets/orion-filtersystem.svg";
-import directionImgTwo from "../../psykoterapigruopen.se/assets/orion-fa-personlig-hjalp.svg";
+
 import directionImgThree from "../../psykoterapigruopen.se/assets/orion-svara-pa-fragor.svg";
 import PopupContactCard from "../../psykoterapigruopen.se/components/Filter/ContactPopup/PopupContactCard";
 import questions from "../../psykoterapigruopen.se/questions.json";
@@ -24,6 +24,8 @@ const App = () => {
 	const [searchBarFilter, setSearchBarFilter] = useState("");
 	const [categoriesFilter, setCategoriesFilter] = useState("");
 	const [languageFilter, setLanguageFilter] = useState("");
+	const [tematiskaFilter, setTematiskaFilter] = useState("");
+	const [terapiOmrådeFilter, setTerapiOmrådeFilter] = useState("");
 
 	const [questionValue, setQuestionValue] = useState("");
 
@@ -49,6 +51,14 @@ const App = () => {
 	];
 
 	const language = [...new Set(therapistData.flatMap((data) => data.language))];
+
+	const tematiska = [
+		...new Set(therapistData.flatMap((data) => data.tematiska)),
+	];
+
+	const terapiområde = [
+		...new Set(therapistData.flatMap((data) => data.terapiområde)),
+	];
 
 	const togglePopup = (id) => {
 		if (id === "01") {
@@ -90,6 +100,13 @@ const App = () => {
 		setLanguageFilter(e.target.value);
 	};
 
+	const changeTematiska = (e) => {
+		setTematiskaFilter(e.target.value);
+	};
+	const changeTerapiOmråde = (e) => {
+		setTerapiOmrådeFilter(e.target.value);
+	};
+
 	const categoryFilter = (therapist) => {
 		if (categoriesFilter.length === 0) {
 			return true;
@@ -104,14 +121,31 @@ const App = () => {
 		return therapist.language.includes(languageFilter);
 	};
 
+	const tematiskaFilterFunc = (therapist) => {
+		if (tematiskaFilter.length === 0) {
+			return true;
+		}
+		return therapist.tematiska.includes(tematiskaFilter);
+	};
+
+	const terapiOmrådeFilterFunc = (therapist) => {
+		if (terapiOmrådeFilter.length === 0) {
+			return true;
+		}
+		return therapist.terapiområde.includes(terapiOmrådeFilter);
+	};
+
 	const filteredTherapists = therapistData
 		.filter(searchFilter)
 		.filter(categoryFilter)
-		.filter(langFilter);
-	// should be moved to json?
+		.filter(langFilter)
+		.filter(tematiskaFilterFunc)
+		.filter(terapiOmrådeFilterFunc);
+
 	const directionCardData = [
 		{ key: "01", img: directionImgOne, text: "Använd filtersystemet" },
-		{ key: "02", img: directionImgTwo, text: "Svara på frågor" },
+		// question filter option commented out
+		// { key: "02", img: directionImgTwo, text: "Svara på frågor" },
 		{ key: "03", img: directionImgThree, text: "Få personlig hjälp" },
 	];
 
@@ -152,13 +186,17 @@ const App = () => {
 					language={language}
 					categoriesFilter={categoriesFilter}
 					languageFilter={languageFilter}
+					changeTerapiOmråde={changeTerapiOmråde}
+					changeTematiska={changeTematiska}
+					tematiskaFilterFunc={tematiskaFilterFunc}
+					tematiska={tematiska}
+					terapiområde={terapiområde}
+					terapiOmrådeFilterFunc={terapiOmrådeFilterFunc}
 				/>
 			)}
 			{showFilterPopup && <CardList therapistData={filteredTherapists} />}
 
 			<Footer />
-
-			{/* <TherapistInfo therapistData={therapistData} /> */}
 		</div>
 	);
 };
